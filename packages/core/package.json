@@ -1,0 +1,56 @@
+{
+  "name": "@icyn/date",
+  "version": "0.1.0",
+  "description": "Date context for AI agents and developers: Chinese lunar calendar, 24 solar terms, holidays and workdays for 12 regions — offline, verified 1900–2100, every answer tagged with its source and confidence.",
+  "keywords": [
+    "lunar",
+    "calendar",
+    "chinese",
+    "农历",
+    "节气",
+    "holidays",
+    "workdays",
+    "mcp",
+    "agent",
+    "date"
+  ],
+  "license": "MIT",
+  "author": "Icyn <icyn12@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "sideEffects": [
+    "./src/regions/*.ts",
+    "./dist/regions/*.js"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./regions/all": {
+      "types": "./dist/regions/all.d.ts",
+      "import": "./dist/regions/all.js"
+    },
+    "./regions/*": {
+      "types": "./dist/regions/*.d.ts",
+      "import": "./dist/regions/*.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "THIRD-PARTY-LICENSES"
+  ],
+  "scripts": {
+    "build": "node build.mjs && tsc -p tsconfig.build.json --emitDeclarationOnly",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

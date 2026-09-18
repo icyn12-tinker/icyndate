@@ -1,0 +1,1093 @@
+{
+ "region": "HK",
+ "name": {
+  "zh-Hans": "香港",
+  "en": "Hong Kong"
+ },
+ "weekend": [
+  6,
+  0
+ ],
+ "tz": "Asia/Hong_Kong",
+ "data_version": "2026.09.18",
+ "generated_at": "2026-09-18T01:28:06+00:00",
+ "verified_until": null,
+ "baseline_note": "Generated from python-holidays 0.104; not yet verified against the official gazette.",
+ "years": {
+  "2024": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "zh-Hant-HK": "一月一日",
+      "zh-Hans": "一月一日"
+     },
+     "days": [
+      "2024-01-01"
+     ]
+    },
+    {
+     "id": "chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Chinese New Year",
+      "zh-Hant-HK": "農曆年初一",
+      "zh-Hans": "农历年初一"
+     },
+     "days": [
+      "2024-02-10"
+     ]
+    },
+    {
+     "id": "the-third-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The third day of Chinese New Year",
+      "zh-Hant-HK": "農曆年初三",
+      "zh-Hans": "农历年初三"
+     },
+     "days": [
+      "2024-02-12"
+     ]
+    },
+    {
+     "id": "the-fourth-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The fourth day of Chinese New Year",
+      "zh-Hant-HK": "農曆年初四",
+      "zh-Hans": "农历年初四"
+     },
+     "days": [
+      "2024-02-13"
+     ]
+    },
+    {
+     "id": "tomb-sweeping-day",
+     "festival": "qingming",
+     "kind": "public",
+     "name": {
+      "en": "Tomb-Sweeping Day",
+      "zh-Hant-HK": "清明節",
+      "zh-Hans": "清明节"
+     },
+     "days": [
+      "2024-04-04"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "zh-Hant-HK": "勞動節",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2024-05-01"
+     ]
+    },
+    {
+     "id": "the-buddha-s-birthday",
+     "festival": "vesak",
+     "kind": "public",
+     "name": {
+      "en": "The Buddha's Birthday",
+      "zh-Hant-HK": "佛誕",
+      "zh-Hans": "佛诞"
+     },
+     "days": [
+      "2024-05-15"
+     ]
+    },
+    {
+     "id": "dragon-boat-festival",
+     "festival": "dragon-boat",
+     "kind": "public",
+     "name": {
+      "en": "Dragon Boat Festival",
+      "zh-Hant-HK": "端午節",
+      "zh-Hans": "端午节"
+     },
+     "days": [
+      "2024-06-10"
+     ]
+    },
+    {
+     "id": "hong-kong-s-a-r-establishment-day",
+     "festival": null,
+     "kind": "public",
+     "name": {
+      "en": "Hong Kong S.A.R. Establishment Day",
+      "zh-Hant-HK": "香港特別行政區成立紀念日",
+      "zh-Hans": "香港特别行政区成立纪念日"
+     },
+     "days": [
+      "2024-07-01"
+     ]
+    },
+    {
+     "id": "the-day-following-mid-autumn-festival",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The Day following Mid-Autumn Festival",
+      "zh-Hant-HK": "中秋節翌日",
+      "zh-Hans": "中秋节翌日"
+     },
+     "days": [
+      "2024-09-18"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "zh-Hant-HK": "國慶日",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2024-10-01"
+     ]
+    },
+    {
+     "id": "double-ninth-festival",
+     "festival": "double-ninth",
+     "kind": "public",
+     "name": {
+      "en": "Double Ninth Festival",
+      "zh-Hant-HK": "重陽節",
+      "zh-Hans": "重阳节"
+     },
+     "days": [
+      "2024-10-11"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "zh-Hant-HK": "聖誕節",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2024-12-25"
+     ]
+    },
+    {
+     "id": "the-first-weekday-after-christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "The first weekday after Christmas Day",
+      "zh-Hant-HK": "聖誕節後第一個周日",
+      "zh-Hans": "圣诞节后第一个周日"
+     },
+     "days": [
+      "2024-12-26"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2025": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "zh-Hant-HK": "一月一日",
+      "zh-Hans": "一月一日"
+     },
+     "days": [
+      "2025-01-01"
+     ]
+    },
+    {
+     "id": "chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Chinese New Year",
+      "zh-Hant-HK": "農曆年初一",
+      "zh-Hans": "农历年初一"
+     },
+     "days": [
+      "2025-01-29"
+     ]
+    },
+    {
+     "id": "the-second-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Chinese New Year",
+      "zh-Hant-HK": "農曆年初二",
+      "zh-Hans": "农历年初二"
+     },
+     "days": [
+      "2025-01-30"
+     ]
+    },
+    {
+     "id": "the-third-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The third day of Chinese New Year",
+      "zh-Hant-HK": "農曆年初三",
+      "zh-Hans": "农历年初三"
+     },
+     "days": [
+      "2025-01-31"
+     ]
+    },
+    {
+     "id": "tomb-sweeping-day",
+     "festival": "qingming",
+     "kind": "public",
+     "name": {
+      "en": "Tomb-Sweeping Day",
+      "zh-Hant-HK": "清明節",
+      "zh-Hans": "清明节"
+     },
+     "days": [
+      "2025-04-04"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "zh-Hant-HK": "勞動節",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2025-05-01"
+     ]
+    },
+    {
+     "id": "the-buddha-s-birthday",
+     "festival": "vesak",
+     "kind": "public",
+     "name": {
+      "en": "The Buddha's Birthday",
+      "zh-Hant-HK": "佛誕",
+      "zh-Hans": "佛诞"
+     },
+     "days": [
+      "2025-05-05"
+     ]
+    },
+    {
+     "id": "dragon-boat-festival",
+     "festival": "dragon-boat",
+     "kind": "public",
+     "name": {
+      "en": "Dragon Boat Festival",
+      "zh-Hant-HK": "端午節",
+      "zh-Hans": "端午节"
+     },
+     "days": [
+      "2025-05-31"
+     ]
+    },
+    {
+     "id": "hong-kong-s-a-r-establishment-day",
+     "festival": null,
+     "kind": "public",
+     "name": {
+      "en": "Hong Kong S.A.R. Establishment Day",
+      "zh-Hant-HK": "香港特別行政區成立紀念日",
+      "zh-Hans": "香港特别行政区成立纪念日"
+     },
+     "days": [
+      "2025-07-01"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "zh-Hant-HK": "國慶日",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2025-10-01"
+     ]
+    },
+    {
+     "id": "the-day-following-mid-autumn-festival",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The Day following Mid-Autumn Festival",
+      "zh-Hant-HK": "中秋節翌日",
+      "zh-Hans": "中秋节翌日"
+     },
+     "days": [
+      "2025-10-07"
+     ]
+    },
+    {
+     "id": "double-ninth-festival",
+     "festival": "double-ninth",
+     "kind": "public",
+     "name": {
+      "en": "Double Ninth Festival",
+      "zh-Hant-HK": "重陽節",
+      "zh-Hans": "重阳节"
+     },
+     "days": [
+      "2025-10-29"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "zh-Hant-HK": "聖誕節",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2025-12-25"
+     ]
+    },
+    {
+     "id": "the-first-weekday-after-christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "The first weekday after Christmas Day",
+      "zh-Hant-HK": "聖誕節後第一個周日",
+      "zh-Hans": "圣诞节后第一个周日"
+     },
+     "days": [
+      "2025-12-26"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2026": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "zh-Hant-HK": "一月一日",
+      "zh-Hans": "一月一日"
+     },
+     "days": [
+      "2026-01-01"
+     ]
+    },
+    {
+     "id": "chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Chinese New Year",
+      "zh-Hant-HK": "農曆年初一",
+      "zh-Hans": "农历年初一"
+     },
+     "days": [
+      "2026-02-17"
+     ]
+    },
+    {
+     "id": "the-second-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Chinese New Year",
+      "zh-Hant-HK": "農曆年初二",
+      "zh-Hans": "农历年初二"
+     },
+     "days": [
+      "2026-02-18"
+     ]
+    },
+    {
+     "id": "the-third-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The third day of Chinese New Year",
+      "zh-Hant-HK": "農曆年初三",
+      "zh-Hans": "农历年初三"
+     },
+     "days": [
+      "2026-02-19"
+     ]
+    },
+    {
+     "id": "tomb-sweeping-day",
+     "festival": "qingming",
+     "kind": "public",
+     "name": {
+      "en": "Tomb-Sweeping Day",
+      "zh-Hant-HK": "清明節",
+      "zh-Hans": "清明节"
+     },
+     "days": [
+      "2026-04-05"
+     ]
+    },
+    {
+     "id": "easter-monday",
+     "festival": "easter-monday",
+     "kind": "public",
+     "name": {
+      "en": "Easter Monday",
+      "zh-Hant-HK": "復活節星期一",
+      "zh-Hans": "复活节星期一"
+     },
+     "days": [
+      "2026-04-06"
+     ]
+    },
+    {
+     "id": "tomb-sweeping-day-observed",
+     "festival": "qingming",
+     "kind": "substitute",
+     "name": {
+      "en": "Tomb-Sweeping Day (observed)",
+      "zh-Hant-HK": "清明節（補假）",
+      "zh-Hans": "清明节（补假）"
+     },
+     "days": [
+      "2026-04-07"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "zh-Hant-HK": "勞動節",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2026-05-01"
+     ]
+    },
+    {
+     "id": "the-buddha-s-birthday",
+     "festival": "vesak",
+     "kind": "public",
+     "name": {
+      "en": "The Buddha's Birthday",
+      "zh-Hant-HK": "佛誕",
+      "zh-Hans": "佛诞"
+     },
+     "days": [
+      "2026-05-24"
+     ]
+    },
+    {
+     "id": "the-buddha-s-birthday-observed",
+     "festival": "vesak",
+     "kind": "substitute",
+     "name": {
+      "en": "The Buddha's Birthday (observed)",
+      "zh-Hant-HK": "佛誕（補假）",
+      "zh-Hans": "佛诞（补假）"
+     },
+     "days": [
+      "2026-05-25"
+     ]
+    },
+    {
+     "id": "dragon-boat-festival",
+     "festival": "dragon-boat",
+     "kind": "public",
+     "name": {
+      "en": "Dragon Boat Festival",
+      "zh-Hant-HK": "端午節",
+      "zh-Hans": "端午节"
+     },
+     "days": [
+      "2026-06-19"
+     ]
+    },
+    {
+     "id": "hong-kong-s-a-r-establishment-day",
+     "festival": null,
+     "kind": "public",
+     "name": {
+      "en": "Hong Kong S.A.R. Establishment Day",
+      "zh-Hant-HK": "香港特別行政區成立紀念日",
+      "zh-Hans": "香港特别行政区成立纪念日"
+     },
+     "days": [
+      "2026-07-01"
+     ]
+    },
+    {
+     "id": "the-day-following-mid-autumn-festival",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The Day following Mid-Autumn Festival",
+      "zh-Hant-HK": "中秋節翌日",
+      "zh-Hans": "中秋节翌日"
+     },
+     "days": [
+      "2026-09-26"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "zh-Hant-HK": "國慶日",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2026-10-01"
+     ]
+    },
+    {
+     "id": "double-ninth-festival",
+     "festival": "double-ninth",
+     "kind": "public",
+     "name": {
+      "en": "Double Ninth Festival",
+      "zh-Hant-HK": "重陽節",
+      "zh-Hans": "重阳节"
+     },
+     "days": [
+      "2026-10-18"
+     ]
+    },
+    {
+     "id": "double-ninth-festival-observed",
+     "festival": "double-ninth",
+     "kind": "substitute",
+     "name": {
+      "en": "Double Ninth Festival (observed)",
+      "zh-Hant-HK": "重陽節（補假）",
+      "zh-Hans": "重阳节（补假）"
+     },
+     "days": [
+      "2026-10-19"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "zh-Hant-HK": "聖誕節",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2026-12-25"
+     ]
+    },
+    {
+     "id": "the-first-weekday-after-christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "The first weekday after Christmas Day",
+      "zh-Hant-HK": "聖誕節後第一個周日",
+      "zh-Hans": "圣诞节后第一个周日"
+     },
+     "days": [
+      "2026-12-26"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2027": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "zh-Hant-HK": "一月一日",
+      "zh-Hans": "一月一日"
+     },
+     "days": [
+      "2027-01-01"
+     ]
+    },
+    {
+     "id": "chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Chinese New Year",
+      "zh-Hant-HK": "農曆年初一",
+      "zh-Hans": "农历年初一"
+     },
+     "days": [
+      "2027-02-06"
+     ]
+    },
+    {
+     "id": "the-third-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The third day of Chinese New Year",
+      "zh-Hant-HK": "農曆年初三",
+      "zh-Hans": "农历年初三"
+     },
+     "days": [
+      "2027-02-08"
+     ]
+    },
+    {
+     "id": "the-fourth-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The fourth day of Chinese New Year",
+      "zh-Hant-HK": "農曆年初四",
+      "zh-Hans": "农历年初四"
+     },
+     "days": [
+      "2027-02-09"
+     ]
+    },
+    {
+     "id": "easter-monday",
+     "festival": "easter-monday",
+     "kind": "public",
+     "name": {
+      "en": "Easter Monday",
+      "zh-Hant-HK": "復活節星期一",
+      "zh-Hans": "复活节星期一"
+     },
+     "days": [
+      "2027-03-29"
+     ]
+    },
+    {
+     "id": "tomb-sweeping-day",
+     "festival": "qingming",
+     "kind": "public",
+     "name": {
+      "en": "Tomb-Sweeping Day",
+      "zh-Hant-HK": "清明節",
+      "zh-Hans": "清明节"
+     },
+     "days": [
+      "2027-04-05"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "zh-Hant-HK": "勞動節",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2027-05-01"
+     ]
+    },
+    {
+     "id": "the-buddha-s-birthday",
+     "festival": "vesak",
+     "kind": "public",
+     "name": {
+      "en": "The Buddha's Birthday",
+      "zh-Hant-HK": "佛誕",
+      "zh-Hans": "佛诞"
+     },
+     "days": [
+      "2027-05-13"
+     ]
+    },
+    {
+     "id": "dragon-boat-festival",
+     "festival": "dragon-boat",
+     "kind": "public",
+     "name": {
+      "en": "Dragon Boat Festival",
+      "zh-Hant-HK": "端午節",
+      "zh-Hans": "端午节"
+     },
+     "days": [
+      "2027-06-09"
+     ]
+    },
+    {
+     "id": "hong-kong-s-a-r-establishment-day",
+     "festival": null,
+     "kind": "public",
+     "name": {
+      "en": "Hong Kong S.A.R. Establishment Day",
+      "zh-Hant-HK": "香港特別行政區成立紀念日",
+      "zh-Hans": "香港特别行政区成立纪念日"
+     },
+     "days": [
+      "2027-07-01"
+     ]
+    },
+    {
+     "id": "the-day-following-mid-autumn-festival",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The Day following Mid-Autumn Festival",
+      "zh-Hant-HK": "中秋節翌日",
+      "zh-Hans": "中秋节翌日"
+     },
+     "days": [
+      "2027-09-16"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "zh-Hant-HK": "國慶日",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2027-10-01"
+     ]
+    },
+    {
+     "id": "double-ninth-festival",
+     "festival": "double-ninth",
+     "kind": "public",
+     "name": {
+      "en": "Double Ninth Festival",
+      "zh-Hant-HK": "重陽節",
+      "zh-Hans": "重阳节"
+     },
+     "days": [
+      "2027-10-08"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "zh-Hant-HK": "聖誕節",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2027-12-25"
+     ]
+    },
+    {
+     "id": "the-first-weekday-after-christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "The first weekday after Christmas Day",
+      "zh-Hant-HK": "聖誕節後第一個周日",
+      "zh-Hans": "圣诞节后第一个周日"
+     },
+     "days": [
+      "2027-12-26"
+     ]
+    },
+    {
+     "id": "the-first-weekday-after-christmas-day-observed",
+     "festival": "christmas",
+     "kind": "substitute",
+     "name": {
+      "en": "The first weekday after Christmas Day (observed)",
+      "zh-Hant-HK": "聖誕節後第一個周日（補假）",
+      "zh-Hans": "圣诞节后第一个周日（补假）"
+     },
+     "days": [
+      "2027-12-27"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2028": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "zh-Hant-HK": "一月一日",
+      "zh-Hans": "一月一日"
+     },
+     "days": [
+      "2028-01-01"
+     ]
+    },
+    {
+     "id": "chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Chinese New Year",
+      "zh-Hant-HK": "農曆年初一",
+      "zh-Hans": "农历年初一"
+     },
+     "days": [
+      "2028-01-26"
+     ]
+    },
+    {
+     "id": "the-second-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Chinese New Year",
+      "zh-Hant-HK": "農曆年初二",
+      "zh-Hans": "农历年初二"
+     },
+     "days": [
+      "2028-01-27"
+     ]
+    },
+    {
+     "id": "the-third-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The third day of Chinese New Year",
+      "zh-Hant-HK": "農曆年初三",
+      "zh-Hans": "农历年初三"
+     },
+     "days": [
+      "2028-01-28"
+     ]
+    },
+    {
+     "id": "tomb-sweeping-day",
+     "festival": "qingming",
+     "kind": "public",
+     "name": {
+      "en": "Tomb-Sweeping Day",
+      "zh-Hant-HK": "清明節",
+      "zh-Hans": "清明节"
+     },
+     "days": [
+      "2028-04-04"
+     ]
+    },
+    {
+     "id": "good-friday",
+     "festival": "good-friday",
+     "kind": "public",
+     "name": {
+      "en": "Good Friday",
+      "zh-Hant-HK": "耶穌受難節",
+      "zh-Hans": "耶稣受难节"
+     },
+     "days": [
+      "2028-04-14"
+     ]
+    },
+    {
+     "id": "easter-monday",
+     "festival": "easter-monday",
+     "kind": "public",
+     "name": {
+      "en": "Easter Monday",
+      "zh-Hant-HK": "復活節星期一",
+      "zh-Hans": "复活节星期一"
+     },
+     "days": [
+      "2028-04-17"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "zh-Hant-HK": "勞動節",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2028-05-01"
+     ]
+    },
+    {
+     "id": "the-buddha-s-birthday",
+     "festival": "vesak",
+     "kind": "public",
+     "name": {
+      "en": "The Buddha's Birthday",
+      "zh-Hant-HK": "佛誕",
+      "zh-Hans": "佛诞"
+     },
+     "days": [
+      "2028-05-02"
+     ]
+    },
+    {
+     "id": "dragon-boat-festival",
+     "festival": "dragon-boat",
+     "kind": "public",
+     "name": {
+      "en": "Dragon Boat Festival",
+      "zh-Hant-HK": "端午節",
+      "zh-Hans": "端午节"
+     },
+     "days": [
+      "2028-05-28"
+     ]
+    },
+    {
+     "id": "dragon-boat-festival-observed",
+     "festival": "dragon-boat",
+     "kind": "substitute",
+     "name": {
+      "en": "Dragon Boat Festival (observed)",
+      "zh-Hant-HK": "端午節（補假）",
+      "zh-Hans": "端午节（补假）"
+     },
+     "days": [
+      "2028-05-29"
+     ]
+    },
+    {
+     "id": "hong-kong-s-a-r-establishment-day",
+     "festival": null,
+     "kind": "public",
+     "name": {
+      "en": "Hong Kong S.A.R. Establishment Day",
+      "zh-Hant-HK": "香港特別行政區成立紀念日",
+      "zh-Hans": "香港特别行政区成立纪念日"
+     },
+     "days": [
+      "2028-07-01"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "zh-Hant-HK": "國慶日",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2028-10-01"
+     ]
+    },
+    {
+     "id": "national-day-observed",
+     "festival": "national-day",
+     "kind": "substitute",
+     "name": {
+      "en": "National Day (observed)",
+      "zh-Hant-HK": "國慶日（補假）",
+      "zh-Hans": "国庆日（补假）"
+     },
+     "days": [
+      "2028-10-02"
+     ]
+    },
+    {
+     "id": "the-day-following-mid-autumn-festival",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The Day following Mid-Autumn Festival",
+      "zh-Hant-HK": "中秋節翌日",
+      "zh-Hans": "中秋节翌日"
+     },
+     "days": [
+      "2028-10-04"
+     ]
+    },
+    {
+     "id": "double-ninth-festival",
+     "festival": "double-ninth",
+     "kind": "public",
+     "name": {
+      "en": "Double Ninth Festival",
+      "zh-Hant-HK": "重陽節",
+      "zh-Hans": "重阳节"
+     },
+     "days": [
+      "2028-10-26"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "zh-Hant-HK": "聖誕節",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2028-12-25"
+     ]
+    },
+    {
+     "id": "the-first-weekday-after-christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "The first weekday after Christmas Day",
+      "zh-Hant-HK": "聖誕節後第一個周日",
+      "zh-Hans": "圣诞节后第一个周日"
+     },
+     "days": [
+      "2028-12-26"
+     ]
+    }
+   ],
+   "workdays": []
+  }
+ }
+}

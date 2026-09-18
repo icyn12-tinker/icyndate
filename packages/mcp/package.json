@@ -1,0 +1,32 @@
+{
+  "name": "@icyn/date-mcp",
+  "version": "0.1.0",
+  "description": "MCP server giving AI agents date context: lunar calendar, solar terms, holidays and workdays for 12 regions. Offline, no API key.",
+  "license": "MIT",
+  "author": "Icyn <icyn12@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "bin": {
+    "icyn-date-mcp": "./dist/server.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "THIRD-PARTY-LICENSES"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.0",
+    "@icyn/date": "^0.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

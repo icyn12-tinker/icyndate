@@ -1,0 +1,19 @@
+{
+  "name": "icyndate",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "build": "npm run build -w @icyn/date && npm run build -w @icyn/date-mcp",
+    "fixtures": "python3 tools/gen_fixtures.py && python3 tools/gen_solar_terms.py && python3 tools/gen_holidays_baseline.py",
+    "check": "npm run build && npx tsc -p . && npm test && python3 tools/check_cn_holidays.py"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

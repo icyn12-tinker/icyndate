@@ -1,0 +1,19 @@
+# Only needed to REGENERATE data. The generated output is committed, so you do not need any of this
+# to build, test or release — see tools/requirements.txt for that.
+#   python3 -m pip install -r tools/requirements-generators.txt
+#
+# `sxtwl` is a C++ extension and is built from source when no wheel matches your Python. On macOS
+# that link step fails if Homebrew's LLVM shadows Apple's linker on PATH ("ld: error: unknown
+# argument '-dynamic'"). Force Apple's toolchain for the build:
+#   CC=/usr/bin/clang CXX=/usr/bin/clang++ python3 -m pip install -r tools/requirements-generators.txt
+# Wheels also lag new Python releases; a slightly older interpreter (3.12) is the path of least pain.
+
+# Fixture generators. Pinned because these two decide the fixtures byte-for-byte; bump them
+# deliberately and regenerate, never incidentally. (Both stamp their own versions into the fixture
+# header, so future regenerations record what produced them.)
+sxtwl==2.0.6
+lunar_python==1.3.12
+
+# Baseline holiday tables for the 11 non-CN regions. Pinned to the version recorded in each
+# generated file's `baseline_note` / `source_ref`, so data and provenance cannot drift apart.
+holidays==0.104

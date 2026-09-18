@@ -1,0 +1,703 @@
+{
+ "region": "MO",
+ "name": {
+  "zh-Hans": "澳门",
+  "en": "Macao"
+ },
+ "weekend": [
+  6,
+  0
+ ],
+ "tz": "Asia/Macau",
+ "data_version": "2026.09.18",
+ "generated_at": "2026-09-18T01:28:06+00:00",
+ "verified_until": null,
+ "baseline_note": "Generated from python-holidays 0.104; not yet verified against the official gazette.",
+ "years": {
+  "2024": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "zh-Hant-MO": "元旦",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2024-01-01"
+     ]
+    },
+    {
+     "id": "chinese-new-year-s-day",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Chinese New Year's Day",
+      "zh-Hant-MO": "農曆正月初一",
+      "zh-Hans": "农历正月初一"
+     },
+     "days": [
+      "2024-02-10"
+     ]
+    },
+    {
+     "id": "the-second-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Chinese New Year",
+      "zh-Hant-MO": "農曆正月初二",
+      "zh-Hans": "农历正月初二"
+     },
+     "days": [
+      "2024-02-11"
+     ]
+    },
+    {
+     "id": "the-third-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The third day of Chinese New Year",
+      "zh-Hant-MO": "農曆正月初三",
+      "zh-Hans": "农历正月初三"
+     },
+     "days": [
+      "2024-02-12"
+     ]
+    },
+    {
+     "id": "tomb-sweeping-day",
+     "festival": "qingming",
+     "kind": "public",
+     "name": {
+      "en": "Tomb-Sweeping Day",
+      "zh-Hant-MO": "清明節",
+      "zh-Hans": "清明节"
+     },
+     "days": [
+      "2024-04-04"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "zh-Hant-MO": "勞動節",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2024-05-01"
+     ]
+    },
+    {
+     "id": "the-day-following-mid-autumn-festival",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The Day following Mid-Autumn Festival",
+      "zh-Hant-MO": "中秋節翌日",
+      "zh-Hans": "中秋节翌日"
+     },
+     "days": [
+      "2024-09-18"
+     ]
+    },
+    {
+     "id": "national-day-of-the-people-s-republic-of-china",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day of the People's Republic of China",
+      "zh-Hant-MO": "中華人民共和國國慶日",
+      "zh-Hans": "中华人民共和国国庆日"
+     },
+     "days": [
+      "2024-10-01"
+     ]
+    },
+    {
+     "id": "double-ninth-festival",
+     "festival": "double-ninth",
+     "kind": "public",
+     "name": {
+      "en": "Double Ninth Festival",
+      "zh-Hant-MO": "重陽節",
+      "zh-Hans": "重阳节"
+     },
+     "days": [
+      "2024-10-11"
+     ]
+    },
+    {
+     "id": "macao-s-a-r-establishment-day",
+     "festival": null,
+     "kind": "public",
+     "name": {
+      "en": "Macao S.A.R. Establishment Day",
+      "zh-Hant-MO": "澳門特別行政區成立紀念日",
+      "zh-Hans": "澳门特别行政区成立纪念日"
+     },
+     "days": [
+      "2024-12-20"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2025": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "zh-Hant-MO": "元旦",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2025-01-01"
+     ]
+    },
+    {
+     "id": "chinese-new-year-s-day",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Chinese New Year's Day",
+      "zh-Hant-MO": "農曆正月初一",
+      "zh-Hans": "农历正月初一"
+     },
+     "days": [
+      "2025-01-29"
+     ]
+    },
+    {
+     "id": "the-second-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Chinese New Year",
+      "zh-Hant-MO": "農曆正月初二",
+      "zh-Hans": "农历正月初二"
+     },
+     "days": [
+      "2025-01-30"
+     ]
+    },
+    {
+     "id": "the-third-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The third day of Chinese New Year",
+      "zh-Hant-MO": "農曆正月初三",
+      "zh-Hans": "农历正月初三"
+     },
+     "days": [
+      "2025-01-31"
+     ]
+    },
+    {
+     "id": "tomb-sweeping-day",
+     "festival": "qingming",
+     "kind": "public",
+     "name": {
+      "en": "Tomb-Sweeping Day",
+      "zh-Hant-MO": "清明節",
+      "zh-Hans": "清明节"
+     },
+     "days": [
+      "2025-04-04"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "zh-Hant-MO": "勞動節",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2025-05-01"
+     ]
+    },
+    {
+     "id": "national-day-of-the-people-s-republic-of-china",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day of the People's Republic of China",
+      "zh-Hant-MO": "中華人民共和國國慶日",
+      "zh-Hans": "中华人民共和国国庆日"
+     },
+     "days": [
+      "2025-10-01"
+     ]
+    },
+    {
+     "id": "the-day-following-mid-autumn-festival",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The Day following Mid-Autumn Festival",
+      "zh-Hant-MO": "中秋節翌日",
+      "zh-Hans": "中秋节翌日"
+     },
+     "days": [
+      "2025-10-07"
+     ]
+    },
+    {
+     "id": "double-ninth-festival",
+     "festival": "double-ninth",
+     "kind": "public",
+     "name": {
+      "en": "Double Ninth Festival",
+      "zh-Hant-MO": "重陽節",
+      "zh-Hans": "重阳节"
+     },
+     "days": [
+      "2025-10-29"
+     ]
+    },
+    {
+     "id": "macao-s-a-r-establishment-day",
+     "festival": null,
+     "kind": "public",
+     "name": {
+      "en": "Macao S.A.R. Establishment Day",
+      "zh-Hant-MO": "澳門特別行政區成立紀念日",
+      "zh-Hans": "澳门特别行政区成立纪念日"
+     },
+     "days": [
+      "2025-12-20"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2026": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "zh-Hant-MO": "元旦",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2026-01-01"
+     ]
+    },
+    {
+     "id": "chinese-new-year-s-day",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Chinese New Year's Day",
+      "zh-Hant-MO": "農曆正月初一",
+      "zh-Hans": "农历正月初一"
+     },
+     "days": [
+      "2026-02-17"
+     ]
+    },
+    {
+     "id": "the-second-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Chinese New Year",
+      "zh-Hant-MO": "農曆正月初二",
+      "zh-Hans": "农历正月初二"
+     },
+     "days": [
+      "2026-02-18"
+     ]
+    },
+    {
+     "id": "the-third-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The third day of Chinese New Year",
+      "zh-Hant-MO": "農曆正月初三",
+      "zh-Hans": "农历正月初三"
+     },
+     "days": [
+      "2026-02-19"
+     ]
+    },
+    {
+     "id": "tomb-sweeping-day",
+     "festival": "qingming",
+     "kind": "public",
+     "name": {
+      "en": "Tomb-Sweeping Day",
+      "zh-Hant-MO": "清明節",
+      "zh-Hans": "清明节"
+     },
+     "days": [
+      "2026-04-05"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "zh-Hant-MO": "勞動節",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2026-05-01"
+     ]
+    },
+    {
+     "id": "the-day-following-mid-autumn-festival",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The Day following Mid-Autumn Festival",
+      "zh-Hant-MO": "中秋節翌日",
+      "zh-Hans": "中秋节翌日"
+     },
+     "days": [
+      "2026-09-26"
+     ]
+    },
+    {
+     "id": "national-day-of-the-people-s-republic-of-china",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day of the People's Republic of China",
+      "zh-Hant-MO": "中華人民共和國國慶日",
+      "zh-Hans": "中华人民共和国国庆日"
+     },
+     "days": [
+      "2026-10-01"
+     ]
+    },
+    {
+     "id": "double-ninth-festival",
+     "festival": "double-ninth",
+     "kind": "public",
+     "name": {
+      "en": "Double Ninth Festival",
+      "zh-Hant-MO": "重陽節",
+      "zh-Hans": "重阳节"
+     },
+     "days": [
+      "2026-10-18"
+     ]
+    },
+    {
+     "id": "macao-s-a-r-establishment-day",
+     "festival": null,
+     "kind": "public",
+     "name": {
+      "en": "Macao S.A.R. Establishment Day",
+      "zh-Hant-MO": "澳門特別行政區成立紀念日",
+      "zh-Hans": "澳门特别行政区成立纪念日"
+     },
+     "days": [
+      "2026-12-20"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2027": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "zh-Hant-MO": "元旦",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2027-01-01"
+     ]
+    },
+    {
+     "id": "chinese-new-year-s-day",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Chinese New Year's Day",
+      "zh-Hant-MO": "農曆正月初一",
+      "zh-Hans": "农历正月初一"
+     },
+     "days": [
+      "2027-02-06"
+     ]
+    },
+    {
+     "id": "the-second-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Chinese New Year",
+      "zh-Hant-MO": "農曆正月初二",
+      "zh-Hans": "农历正月初二"
+     },
+     "days": [
+      "2027-02-07"
+     ]
+    },
+    {
+     "id": "the-third-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The third day of Chinese New Year",
+      "zh-Hant-MO": "農曆正月初三",
+      "zh-Hans": "农历正月初三"
+     },
+     "days": [
+      "2027-02-08"
+     ]
+    },
+    {
+     "id": "tomb-sweeping-day",
+     "festival": "qingming",
+     "kind": "public",
+     "name": {
+      "en": "Tomb-Sweeping Day",
+      "zh-Hant-MO": "清明節",
+      "zh-Hans": "清明节"
+     },
+     "days": [
+      "2027-04-05"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "zh-Hant-MO": "勞動節",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2027-05-01"
+     ]
+    },
+    {
+     "id": "the-day-following-mid-autumn-festival",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The Day following Mid-Autumn Festival",
+      "zh-Hant-MO": "中秋節翌日",
+      "zh-Hans": "中秋节翌日"
+     },
+     "days": [
+      "2027-09-16"
+     ]
+    },
+    {
+     "id": "national-day-of-the-people-s-republic-of-china",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day of the People's Republic of China",
+      "zh-Hant-MO": "中華人民共和國國慶日",
+      "zh-Hans": "中华人民共和国国庆日"
+     },
+     "days": [
+      "2027-10-01"
+     ]
+    },
+    {
+     "id": "double-ninth-festival",
+     "festival": "double-ninth",
+     "kind": "public",
+     "name": {
+      "en": "Double Ninth Festival",
+      "zh-Hant-MO": "重陽節",
+      "zh-Hans": "重阳节"
+     },
+     "days": [
+      "2027-10-08"
+     ]
+    },
+    {
+     "id": "macao-s-a-r-establishment-day",
+     "festival": null,
+     "kind": "public",
+     "name": {
+      "en": "Macao S.A.R. Establishment Day",
+      "zh-Hant-MO": "澳門特別行政區成立紀念日",
+      "zh-Hans": "澳门特别行政区成立纪念日"
+     },
+     "days": [
+      "2027-12-20"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2028": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "zh-Hant-MO": "元旦",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2028-01-01"
+     ]
+    },
+    {
+     "id": "chinese-new-year-s-day",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Chinese New Year's Day",
+      "zh-Hant-MO": "農曆正月初一",
+      "zh-Hans": "农历正月初一"
+     },
+     "days": [
+      "2028-01-26"
+     ]
+    },
+    {
+     "id": "the-second-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Chinese New Year",
+      "zh-Hant-MO": "農曆正月初二",
+      "zh-Hans": "农历正月初二"
+     },
+     "days": [
+      "2028-01-27"
+     ]
+    },
+    {
+     "id": "the-third-day-of-chinese-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The third day of Chinese New Year",
+      "zh-Hant-MO": "農曆正月初三",
+      "zh-Hans": "农历正月初三"
+     },
+     "days": [
+      "2028-01-28"
+     ]
+    },
+    {
+     "id": "tomb-sweeping-day",
+     "festival": "qingming",
+     "kind": "public",
+     "name": {
+      "en": "Tomb-Sweeping Day",
+      "zh-Hant-MO": "清明節",
+      "zh-Hans": "清明节"
+     },
+     "days": [
+      "2028-04-04"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "zh-Hant-MO": "勞動節",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2028-05-01"
+     ]
+    },
+    {
+     "id": "national-day-of-the-people-s-republic-of-china",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day of the People's Republic of China",
+      "zh-Hant-MO": "中華人民共和國國慶日",
+      "zh-Hans": "中华人民共和国国庆日"
+     },
+     "days": [
+      "2028-10-01"
+     ]
+    },
+    {
+     "id": "the-day-following-mid-autumn-festival",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The Day following Mid-Autumn Festival",
+      "zh-Hant-MO": "中秋節翌日",
+      "zh-Hans": "中秋节翌日"
+     },
+     "days": [
+      "2028-10-04"
+     ]
+    },
+    {
+     "id": "double-ninth-festival",
+     "festival": "double-ninth",
+     "kind": "public",
+     "name": {
+      "en": "Double Ninth Festival",
+      "zh-Hant-MO": "重陽節",
+      "zh-Hans": "重阳节"
+     },
+     "days": [
+      "2028-10-26"
+     ]
+    },
+    {
+     "id": "macao-s-a-r-establishment-day",
+     "festival": null,
+     "kind": "public",
+     "name": {
+      "en": "Macao S.A.R. Establishment Day",
+      "zh-Hant-MO": "澳門特別行政區成立紀念日",
+      "zh-Hans": "澳门特别行政区成立纪念日"
+     },
+     "days": [
+      "2028-12-20"
+     ]
+    }
+   ],
+   "workdays": []
+  }
+ }
+}

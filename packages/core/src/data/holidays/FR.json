@@ -1,0 +1,768 @@
+{
+ "region": "FR",
+ "name": {
+  "zh-Hans": "法国",
+  "en": "France"
+ },
+ "weekend": [
+  6,
+  0
+ ],
+ "tz": "Europe/Paris",
+ "data_version": "2026.09.18",
+ "generated_at": "2026-09-18T01:28:06+00:00",
+ "verified_until": null,
+ "baseline_note": "Generated from python-holidays 0.104; not yet verified against the official gazette.",
+ "years": {
+  "2024": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "fr": "Jour de l'an",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2024-01-01"
+     ]
+    },
+    {
+     "id": "easter-monday",
+     "festival": "easter-monday",
+     "kind": "public",
+     "name": {
+      "en": "Easter Monday",
+      "fr": "Lundi de Pâques",
+      "zh-Hans": "复活节星期一"
+     },
+     "days": [
+      "2024-04-01"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "fr": "Fête du Travail",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2024-05-01"
+     ]
+    },
+    {
+     "id": "victory-day",
+     "festival": "ve-day",
+     "kind": "public",
+     "name": {
+      "en": "Victory Day",
+      "fr": "Fête de la Victoire",
+      "zh-Hans": "胜利日"
+     },
+     "days": [
+      "2024-05-08"
+     ]
+    },
+    {
+     "id": "ascension-day",
+     "festival": "ascension",
+     "kind": "public",
+     "name": {
+      "en": "Ascension Day",
+      "fr": "Ascension",
+      "zh-Hans": "耶稣升天节"
+     },
+     "days": [
+      "2024-05-09"
+     ]
+    },
+    {
+     "id": "pentecost-monday",
+     "festival": "whit-monday",
+     "kind": "public",
+     "name": {
+      "en": "Pentecost Monday",
+      "fr": "Lundi de Pentecôte",
+      "zh-Hans": "圣灵降临节星期一"
+     },
+     "days": [
+      "2024-05-20"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "fr": "Fête nationale",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2024-07-14"
+     ]
+    },
+    {
+     "id": "assumption-day",
+     "festival": "assumption",
+     "kind": "public",
+     "name": {
+      "en": "Assumption Day",
+      "fr": "Assomption",
+      "zh-Hans": "圣母升天节"
+     },
+     "days": [
+      "2024-08-15"
+     ]
+    },
+    {
+     "id": "all-saints-day",
+     "festival": "all-saints",
+     "kind": "public",
+     "name": {
+      "en": "All Saints' Day",
+      "fr": "Toussaint",
+      "zh-Hans": "诸圣节"
+     },
+     "days": [
+      "2024-11-01"
+     ]
+    },
+    {
+     "id": "armistice-day",
+     "festival": "armistice",
+     "kind": "public",
+     "name": {
+      "en": "Armistice Day",
+      "fr": "Armistice",
+      "zh-Hans": "停战纪念日"
+     },
+     "days": [
+      "2024-11-11"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "fr": "Noël",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2024-12-25"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2025": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "fr": "Jour de l'an",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2025-01-01"
+     ]
+    },
+    {
+     "id": "easter-monday",
+     "festival": "easter-monday",
+     "kind": "public",
+     "name": {
+      "en": "Easter Monday",
+      "fr": "Lundi de Pâques",
+      "zh-Hans": "复活节星期一"
+     },
+     "days": [
+      "2025-04-21"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "fr": "Fête du Travail",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2025-05-01"
+     ]
+    },
+    {
+     "id": "victory-day",
+     "festival": "ve-day",
+     "kind": "public",
+     "name": {
+      "en": "Victory Day",
+      "fr": "Fête de la Victoire",
+      "zh-Hans": "胜利日"
+     },
+     "days": [
+      "2025-05-08"
+     ]
+    },
+    {
+     "id": "ascension-day",
+     "festival": "ascension",
+     "kind": "public",
+     "name": {
+      "en": "Ascension Day",
+      "fr": "Ascension",
+      "zh-Hans": "耶稣升天节"
+     },
+     "days": [
+      "2025-05-29"
+     ]
+    },
+    {
+     "id": "pentecost-monday",
+     "festival": "whit-monday",
+     "kind": "public",
+     "name": {
+      "en": "Pentecost Monday",
+      "fr": "Lundi de Pentecôte",
+      "zh-Hans": "圣灵降临节星期一"
+     },
+     "days": [
+      "2025-06-09"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "fr": "Fête nationale",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2025-07-14"
+     ]
+    },
+    {
+     "id": "assumption-day",
+     "festival": "assumption",
+     "kind": "public",
+     "name": {
+      "en": "Assumption Day",
+      "fr": "Assomption",
+      "zh-Hans": "圣母升天节"
+     },
+     "days": [
+      "2025-08-15"
+     ]
+    },
+    {
+     "id": "all-saints-day",
+     "festival": "all-saints",
+     "kind": "public",
+     "name": {
+      "en": "All Saints' Day",
+      "fr": "Toussaint",
+      "zh-Hans": "诸圣节"
+     },
+     "days": [
+      "2025-11-01"
+     ]
+    },
+    {
+     "id": "armistice-day",
+     "festival": "armistice",
+     "kind": "public",
+     "name": {
+      "en": "Armistice Day",
+      "fr": "Armistice",
+      "zh-Hans": "停战纪念日"
+     },
+     "days": [
+      "2025-11-11"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "fr": "Noël",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2025-12-25"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2026": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "fr": "Jour de l'an",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2026-01-01"
+     ]
+    },
+    {
+     "id": "easter-monday",
+     "festival": "easter-monday",
+     "kind": "public",
+     "name": {
+      "en": "Easter Monday",
+      "fr": "Lundi de Pâques",
+      "zh-Hans": "复活节星期一"
+     },
+     "days": [
+      "2026-04-06"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "fr": "Fête du Travail",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2026-05-01"
+     ]
+    },
+    {
+     "id": "victory-day",
+     "festival": "ve-day",
+     "kind": "public",
+     "name": {
+      "en": "Victory Day",
+      "fr": "Fête de la Victoire",
+      "zh-Hans": "胜利日"
+     },
+     "days": [
+      "2026-05-08"
+     ]
+    },
+    {
+     "id": "ascension-day",
+     "festival": "ascension",
+     "kind": "public",
+     "name": {
+      "en": "Ascension Day",
+      "fr": "Ascension",
+      "zh-Hans": "耶稣升天节"
+     },
+     "days": [
+      "2026-05-14"
+     ]
+    },
+    {
+     "id": "pentecost-monday",
+     "festival": "whit-monday",
+     "kind": "public",
+     "name": {
+      "en": "Pentecost Monday",
+      "fr": "Lundi de Pentecôte",
+      "zh-Hans": "圣灵降临节星期一"
+     },
+     "days": [
+      "2026-05-25"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "fr": "Fête nationale",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2026-07-14"
+     ]
+    },
+    {
+     "id": "assumption-day",
+     "festival": "assumption",
+     "kind": "public",
+     "name": {
+      "en": "Assumption Day",
+      "fr": "Assomption",
+      "zh-Hans": "圣母升天节"
+     },
+     "days": [
+      "2026-08-15"
+     ]
+    },
+    {
+     "id": "all-saints-day",
+     "festival": "all-saints",
+     "kind": "public",
+     "name": {
+      "en": "All Saints' Day",
+      "fr": "Toussaint",
+      "zh-Hans": "诸圣节"
+     },
+     "days": [
+      "2026-11-01"
+     ]
+    },
+    {
+     "id": "armistice-day",
+     "festival": "armistice",
+     "kind": "public",
+     "name": {
+      "en": "Armistice Day",
+      "fr": "Armistice",
+      "zh-Hans": "停战纪念日"
+     },
+     "days": [
+      "2026-11-11"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "fr": "Noël",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2026-12-25"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2027": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "fr": "Jour de l'an",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2027-01-01"
+     ]
+    },
+    {
+     "id": "easter-monday",
+     "festival": "easter-monday",
+     "kind": "public",
+     "name": {
+      "en": "Easter Monday",
+      "fr": "Lundi de Pâques",
+      "zh-Hans": "复活节星期一"
+     },
+     "days": [
+      "2027-03-29"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "fr": "Fête du Travail",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2027-05-01"
+     ]
+    },
+    {
+     "id": "ascension-day",
+     "festival": "ascension",
+     "kind": "public",
+     "name": {
+      "en": "Ascension Day",
+      "fr": "Ascension",
+      "zh-Hans": "耶稣升天节"
+     },
+     "days": [
+      "2027-05-06"
+     ]
+    },
+    {
+     "id": "victory-day",
+     "festival": "ve-day",
+     "kind": "public",
+     "name": {
+      "en": "Victory Day",
+      "fr": "Fête de la Victoire",
+      "zh-Hans": "胜利日"
+     },
+     "days": [
+      "2027-05-08"
+     ]
+    },
+    {
+     "id": "pentecost-monday",
+     "festival": "whit-monday",
+     "kind": "public",
+     "name": {
+      "en": "Pentecost Monday",
+      "fr": "Lundi de Pentecôte",
+      "zh-Hans": "圣灵降临节星期一"
+     },
+     "days": [
+      "2027-05-17"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "fr": "Fête nationale",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2027-07-14"
+     ]
+    },
+    {
+     "id": "assumption-day",
+     "festival": "assumption",
+     "kind": "public",
+     "name": {
+      "en": "Assumption Day",
+      "fr": "Assomption",
+      "zh-Hans": "圣母升天节"
+     },
+     "days": [
+      "2027-08-15"
+     ]
+    },
+    {
+     "id": "all-saints-day",
+     "festival": "all-saints",
+     "kind": "public",
+     "name": {
+      "en": "All Saints' Day",
+      "fr": "Toussaint",
+      "zh-Hans": "诸圣节"
+     },
+     "days": [
+      "2027-11-01"
+     ]
+    },
+    {
+     "id": "armistice-day",
+     "festival": "armistice",
+     "kind": "public",
+     "name": {
+      "en": "Armistice Day",
+      "fr": "Armistice",
+      "zh-Hans": "停战纪念日"
+     },
+     "days": [
+      "2027-11-11"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "fr": "Noël",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2027-12-25"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2028": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "fr": "Jour de l'an",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2028-01-01"
+     ]
+    },
+    {
+     "id": "easter-monday",
+     "festival": "easter-monday",
+     "kind": "public",
+     "name": {
+      "en": "Easter Monday",
+      "fr": "Lundi de Pâques",
+      "zh-Hans": "复活节星期一"
+     },
+     "days": [
+      "2028-04-17"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "fr": "Fête du Travail",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2028-05-01"
+     ]
+    },
+    {
+     "id": "victory-day",
+     "festival": "ve-day",
+     "kind": "public",
+     "name": {
+      "en": "Victory Day",
+      "fr": "Fête de la Victoire",
+      "zh-Hans": "胜利日"
+     },
+     "days": [
+      "2028-05-08"
+     ]
+    },
+    {
+     "id": "ascension-day",
+     "festival": "ascension",
+     "kind": "public",
+     "name": {
+      "en": "Ascension Day",
+      "fr": "Ascension",
+      "zh-Hans": "耶稣升天节"
+     },
+     "days": [
+      "2028-05-25"
+     ]
+    },
+    {
+     "id": "pentecost-monday",
+     "festival": "whit-monday",
+     "kind": "public",
+     "name": {
+      "en": "Pentecost Monday",
+      "fr": "Lundi de Pentecôte",
+      "zh-Hans": "圣灵降临节星期一"
+     },
+     "days": [
+      "2028-06-05"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "fr": "Fête nationale",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2028-07-14"
+     ]
+    },
+    {
+     "id": "assumption-day",
+     "festival": "assumption",
+     "kind": "public",
+     "name": {
+      "en": "Assumption Day",
+      "fr": "Assomption",
+      "zh-Hans": "圣母升天节"
+     },
+     "days": [
+      "2028-08-15"
+     ]
+    },
+    {
+     "id": "all-saints-day",
+     "festival": "all-saints",
+     "kind": "public",
+     "name": {
+      "en": "All Saints' Day",
+      "fr": "Toussaint",
+      "zh-Hans": "诸圣节"
+     },
+     "days": [
+      "2028-11-01"
+     ]
+    },
+    {
+     "id": "armistice-day",
+     "festival": "armistice",
+     "kind": "public",
+     "name": {
+      "en": "Armistice Day",
+      "fr": "Armistice",
+      "zh-Hans": "停战纪念日"
+     },
+     "days": [
+      "2028-11-11"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "fr": "Noël",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2028-12-25"
+     ]
+    }
+   ],
+   "workdays": []
+  }
+ }
+}

@@ -1,0 +1,864 @@
+{
+ "region": "VN",
+ "name": {
+  "zh-Hans": "越南",
+  "en": "Vietnam"
+ },
+ "weekend": [
+  6,
+  0
+ ],
+ "tz": "Asia/Ho_Chi_Minh",
+ "data_version": "2026.09.18",
+ "generated_at": "2026-09-18T01:28:06+00:00",
+ "verified_until": null,
+ "baseline_note": "Generated from python-holidays 0.104; not yet verified against the official gazette.",
+ "years": {
+  "2024": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "vi": "Tết Dương lịch",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2024-01-01"
+     ]
+    },
+    {
+     "id": "29-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "29 of Lunar New Year",
+      "vi": "29 Tết",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2024-02-08"
+     ]
+    },
+    {
+     "id": "lunar-new-year-s-eve",
+     "festival": "lunar-new-year-eve",
+     "kind": "public",
+     "name": {
+      "en": "Lunar New Year's Eve",
+      "vi": "Giao thừa Tết Nguyên Đán",
+      "zh-Hans": "除夕"
+     },
+     "days": [
+      "2024-02-09"
+     ]
+    },
+    {
+     "id": "lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Lunar New Year",
+      "vi": "Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2024-02-10"
+     ]
+    },
+    {
+     "id": "second-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Second Day of Lunar New Year",
+      "vi": "Mùng hai Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2024-02-11"
+     ]
+    },
+    {
+     "id": "third-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Third Day of Lunar New Year",
+      "vi": "Mùng ba Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2024-02-12"
+     ]
+    },
+    {
+     "id": "fourth-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Fourth Day of Lunar New Year",
+      "vi": "Mùng bốn Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2024-02-13"
+     ]
+    },
+    {
+     "id": "fifth-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Fifth Day of Lunar New Year",
+      "vi": "Mùng năm Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2024-02-14"
+     ]
+    },
+    {
+     "id": "hung-kings-commemoration-day",
+     "festival": "hung-kings",
+     "kind": "public",
+     "name": {
+      "en": "Hung Kings' Commemoration Day",
+      "vi": "Ngày Giỗ Tổ Hùng Vương",
+      "zh-Hans": "雄王纪念日"
+     },
+     "days": [
+      "2024-04-18"
+     ]
+    },
+    {
+     "id": "day-off-substituted-from-05-04-2024",
+     "festival": "substitute",
+     "kind": "substitute",
+     "name": {
+      "en": "Day off (substituted from 05/04/2024)",
+      "vi": "Ngày nghỉ (thay cho ngày 04/05/2024)",
+      "zh-Hans": "补假"
+     },
+     "days": [
+      "2024-04-29"
+     ]
+    },
+    {
+     "id": "liberation-day-reunification-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "Liberation Day/Reunification Day",
+      "vi": "Ngày Chiến thắng",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2024-04-30"
+     ]
+    },
+    {
+     "id": "international-labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "International Labor Day",
+      "vi": "Ngày Quốc tế Lao động",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2024-05-01"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "vi": "Quốc khánh",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2024-09-02",
+      "2024-09-03"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2025": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "vi": "Tết Dương lịch",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2025-01-01"
+     ]
+    },
+    {
+     "id": "29-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "29 of Lunar New Year",
+      "vi": "29 Tết",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2025-01-27"
+     ]
+    },
+    {
+     "id": "lunar-new-year-s-eve",
+     "festival": "lunar-new-year-eve",
+     "kind": "public",
+     "name": {
+      "en": "Lunar New Year's Eve",
+      "vi": "Giao thừa Tết Nguyên Đán",
+      "zh-Hans": "除夕"
+     },
+     "days": [
+      "2025-01-28"
+     ]
+    },
+    {
+     "id": "lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Lunar New Year",
+      "vi": "Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2025-01-29"
+     ]
+    },
+    {
+     "id": "second-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Second Day of Lunar New Year",
+      "vi": "Mùng hai Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2025-01-30"
+     ]
+    },
+    {
+     "id": "third-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Third Day of Lunar New Year",
+      "vi": "Mùng ba Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2025-01-31"
+     ]
+    },
+    {
+     "id": "fourth-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Fourth Day of Lunar New Year",
+      "vi": "Mùng bốn Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2025-02-01"
+     ]
+    },
+    {
+     "id": "hung-kings-commemoration-day",
+     "festival": "hung-kings",
+     "kind": "public",
+     "name": {
+      "en": "Hung Kings' Commemoration Day",
+      "vi": "Ngày Giỗ Tổ Hùng Vương",
+      "zh-Hans": "雄王纪念日"
+     },
+     "days": [
+      "2025-04-07"
+     ]
+    },
+    {
+     "id": "liberation-day-reunification-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "Liberation Day/Reunification Day",
+      "vi": "Ngày Chiến thắng",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2025-04-30"
+     ]
+    },
+    {
+     "id": "international-labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "International Labor Day",
+      "vi": "Ngày Quốc tế Lao động",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2025-05-01"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "vi": "Quốc khánh",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2025-09-01",
+      "2025-09-02"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2026": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "vi": "Tết Dương lịch",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2026-01-01"
+     ]
+    },
+    {
+     "id": "lunar-new-year-s-eve",
+     "festival": "lunar-new-year-eve",
+     "kind": "public",
+     "name": {
+      "en": "Lunar New Year's Eve",
+      "vi": "Giao thừa Tết Nguyên Đán",
+      "zh-Hans": "除夕"
+     },
+     "days": [
+      "2026-02-16"
+     ]
+    },
+    {
+     "id": "lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Lunar New Year",
+      "vi": "Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2026-02-17"
+     ]
+    },
+    {
+     "id": "second-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Second Day of Lunar New Year",
+      "vi": "Mùng hai Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2026-02-18"
+     ]
+    },
+    {
+     "id": "third-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Third Day of Lunar New Year",
+      "vi": "Mùng ba Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2026-02-19"
+     ]
+    },
+    {
+     "id": "fourth-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Fourth Day of Lunar New Year",
+      "vi": "Mùng bốn Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2026-02-20"
+     ]
+    },
+    {
+     "id": "hung-kings-commemoration-day",
+     "festival": "hung-kings",
+     "kind": "public",
+     "name": {
+      "en": "Hung Kings' Commemoration Day",
+      "vi": "Ngày Giỗ Tổ Hùng Vương",
+      "zh-Hans": "雄王纪念日"
+     },
+     "days": [
+      "2026-04-26"
+     ]
+    },
+    {
+     "id": "hung-kings-commemoration-day-observed",
+     "festival": "hung-kings",
+     "kind": "substitute",
+     "name": {
+      "en": "Hung Kings' Commemoration Day (observed)",
+      "vi": "Ngày Giỗ Tổ Hùng Vương (nghỉ bù)",
+      "zh-Hans": "雄王纪念日"
+     },
+     "days": [
+      "2026-04-27"
+     ]
+    },
+    {
+     "id": "liberation-day-reunification-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "Liberation Day/Reunification Day",
+      "vi": "Ngày Chiến thắng",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2026-04-30"
+     ]
+    },
+    {
+     "id": "international-labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "International Labor Day",
+      "vi": "Ngày Quốc tế Lao động",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2026-05-01"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "vi": "Quốc khánh",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2026-09-01",
+      "2026-09-02"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2027": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "vi": "Tết Dương lịch",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2027-01-01"
+     ]
+    },
+    {
+     "id": "29-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "29 of Lunar New Year",
+      "vi": "29 Tết",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2027-02-04"
+     ]
+    },
+    {
+     "id": "lunar-new-year-s-eve",
+     "festival": "lunar-new-year-eve",
+     "kind": "public",
+     "name": {
+      "en": "Lunar New Year's Eve",
+      "vi": "Giao thừa Tết Nguyên Đán",
+      "zh-Hans": "除夕"
+     },
+     "days": [
+      "2027-02-05"
+     ]
+    },
+    {
+     "id": "lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Lunar New Year",
+      "vi": "Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2027-02-06"
+     ]
+    },
+    {
+     "id": "second-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Second Day of Lunar New Year",
+      "vi": "Mùng hai Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2027-02-07"
+     ]
+    },
+    {
+     "id": "third-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Third Day of Lunar New Year",
+      "vi": "Mùng ba Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2027-02-08"
+     ]
+    },
+    {
+     "id": "fourth-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Fourth Day of Lunar New Year",
+      "vi": "Mùng bốn Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2027-02-09"
+     ]
+    },
+    {
+     "id": "fifth-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Fifth Day of Lunar New Year",
+      "vi": "Mùng năm Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2027-02-10"
+     ]
+    },
+    {
+     "id": "hung-kings-commemoration-day",
+     "festival": "hung-kings",
+     "kind": "public",
+     "name": {
+      "en": "Hung Kings' Commemoration Day",
+      "vi": "Ngày Giỗ Tổ Hùng Vương",
+      "zh-Hans": "雄王纪念日"
+     },
+     "days": [
+      "2027-04-16"
+     ]
+    },
+    {
+     "id": "liberation-day-reunification-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "Liberation Day/Reunification Day",
+      "vi": "Ngày Chiến thắng",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2027-04-30"
+     ]
+    },
+    {
+     "id": "international-labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "International Labor Day",
+      "vi": "Ngày Quốc tế Lao động",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2027-05-01"
+     ]
+    },
+    {
+     "id": "international-labor-day-observed",
+     "festival": "labour-day",
+     "kind": "substitute",
+     "name": {
+      "en": "International Labor Day (observed)",
+      "vi": "Ngày Quốc tế Lao động (nghỉ bù)",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2027-05-03"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "vi": "Quốc khánh",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2027-09-02",
+      "2027-09-03"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2028": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "vi": "Tết Dương lịch",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2028-01-01"
+     ]
+    },
+    {
+     "id": "new-year-s-day-observed",
+     "festival": "new-year",
+     "kind": "substitute",
+     "name": {
+      "en": "New Year's Day (observed)",
+      "vi": "Tết Dương lịch (nghỉ bù)",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2028-01-03"
+     ]
+    },
+    {
+     "id": "29-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "29 of Lunar New Year",
+      "vi": "29 Tết",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2028-01-24"
+     ]
+    },
+    {
+     "id": "lunar-new-year-s-eve",
+     "festival": "lunar-new-year-eve",
+     "kind": "public",
+     "name": {
+      "en": "Lunar New Year's Eve",
+      "vi": "Giao thừa Tết Nguyên Đán",
+      "zh-Hans": "除夕"
+     },
+     "days": [
+      "2028-01-25"
+     ]
+    },
+    {
+     "id": "lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Lunar New Year",
+      "vi": "Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2028-01-26"
+     ]
+    },
+    {
+     "id": "second-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Second Day of Lunar New Year",
+      "vi": "Mùng hai Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2028-01-27"
+     ]
+    },
+    {
+     "id": "third-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Third Day of Lunar New Year",
+      "vi": "Mùng ba Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2028-01-28"
+     ]
+    },
+    {
+     "id": "fourth-day-of-lunar-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Fourth Day of Lunar New Year",
+      "vi": "Mùng bốn Tết Nguyên Đán",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2028-01-29"
+     ]
+    },
+    {
+     "id": "hung-kings-commemoration-day",
+     "festival": "hung-kings",
+     "kind": "public",
+     "name": {
+      "en": "Hung Kings' Commemoration Day",
+      "vi": "Ngày Giỗ Tổ Hùng Vương",
+      "zh-Hans": "雄王纪念日"
+     },
+     "days": [
+      "2028-04-04"
+     ]
+    },
+    {
+     "id": "liberation-day-reunification-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "Liberation Day/Reunification Day",
+      "vi": "Ngày Chiến thắng",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2028-04-30"
+     ]
+    },
+    {
+     "id": "international-labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "International Labor Day",
+      "vi": "Ngày Quốc tế Lao động",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2028-05-01"
+     ]
+    },
+    {
+     "id": "liberation-day-reunification-day-observed",
+     "festival": "national-day",
+     "kind": "substitute",
+     "name": {
+      "en": "Liberation Day/Reunification Day (observed)",
+      "vi": "Ngày Chiến thắng (nghỉ bù)",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2028-05-02"
+     ]
+    },
+    {
+     "id": "national-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Day",
+      "vi": "Quốc khánh",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2028-09-01",
+      "2028-09-02"
+     ]
+    },
+    {
+     "id": "national-day-observed",
+     "festival": "national-day",
+     "kind": "substitute",
+     "name": {
+      "en": "National Day (observed)",
+      "vi": "Quốc khánh (nghỉ bù)",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2028-09-04"
+     ]
+    }
+   ],
+   "workdays": []
+  }
+ }
+}

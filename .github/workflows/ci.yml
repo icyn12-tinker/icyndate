@@ -1,0 +1,21 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci
+      # build first: @icyn/date-mcp type-checks against @icyn/date's generated .d.ts,
+      # so `tsc -p .` cannot pass on a clean checkout until dist/ exists.
+      - run: npm run build
+      - run: npx tsc -p .
+      - run: npm test
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      # tools/requirements.txt is the gate's deps only — the fixture generators (sxtwl: C++, needs a
+      # compiler) live in tools/requirements-generators.txt and are never needed per commit.
+      - run: pip install -r tools/requirements.txt
+      - run: python3 tools/check_cn_holidays.py

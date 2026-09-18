@@ -1,0 +1,1418 @@
+{
+ "region": "KR",
+ "name": {
+  "zh-Hans": "韩国",
+  "en": "South Korea"
+ },
+ "weekend": [
+  6,
+  0
+ ],
+ "tz": "Asia/Seoul",
+ "data_version": "2026.09.18",
+ "generated_at": "2026-09-18T01:28:06+00:00",
+ "verified_until": null,
+ "baseline_note": "Generated from python-holidays 0.104; not yet verified against the official gazette.",
+ "years": {
+  "2024": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "ko": "신정연휴",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2024-01-01"
+     ]
+    },
+    {
+     "id": "the-day-preceding-korean-new-year",
+     "festival": "lunar-new-year-eve",
+     "kind": "public",
+     "name": {
+      "en": "The day preceding Korean New Year",
+      "ko": "설날 전날",
+      "zh-Hans": "除夕"
+     },
+     "days": [
+      "2024-02-09"
+     ]
+    },
+    {
+     "id": "korean-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Korean New Year",
+      "ko": "설날",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2024-02-10"
+     ]
+    },
+    {
+     "id": "the-second-day-of-korean-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Korean New Year",
+      "ko": "설날 다음날",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2024-02-11"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-korean-new-year",
+     "festival": "lunar-new-year",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Korean New Year",
+      "ko": "설날 대체 휴일",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2024-02-12"
+     ]
+    },
+    {
+     "id": "independence-movement-day",
+     "festival": "independence-movement",
+     "kind": "public",
+     "name": {
+      "en": "Independence Movement Day",
+      "ko": "삼일절",
+      "zh-Hans": "三一节"
+     },
+     "days": [
+      "2024-03-01"
+     ]
+    },
+    {
+     "id": "national-assembly-election-day",
+     "festival": "election-day",
+     "kind": "public",
+     "name": {
+      "en": "National Assembly Election Day",
+      "ko": "국회의원 선거일",
+      "zh-Hans": "选举日"
+     },
+     "days": [
+      "2024-04-10"
+     ]
+    },
+    {
+     "id": "children-s-day",
+     "festival": "childrens-day",
+     "kind": "public",
+     "name": {
+      "en": "Children's Day",
+      "ko": "어린이날",
+      "zh-Hans": "儿童节"
+     },
+     "days": [
+      "2024-05-05"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-children-s-day",
+     "festival": "childrens-day",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Children's Day",
+      "ko": "어린이날 대체 휴일",
+      "zh-Hans": "儿童节"
+     },
+     "days": [
+      "2024-05-06"
+     ]
+    },
+    {
+     "id": "buddha-s-birthday",
+     "festival": "vesak",
+     "kind": "public",
+     "name": {
+      "en": "Buddha's Birthday",
+      "ko": "부처님오신날",
+      "zh-Hans": "佛诞"
+     },
+     "days": [
+      "2024-05-15"
+     ]
+    },
+    {
+     "id": "memorial-day",
+     "festival": "memorial-day",
+     "kind": "public",
+     "name": {
+      "en": "Memorial Day",
+      "ko": "현충일",
+      "zh-Hans": "阵亡将士纪念日"
+     },
+     "days": [
+      "2024-06-06"
+     ]
+    },
+    {
+     "id": "liberation-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "Liberation Day",
+      "ko": "광복절",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2024-08-15"
+     ]
+    },
+    {
+     "id": "the-day-preceding-chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The day preceding Chuseok",
+      "ko": "추석 전날",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2024-09-16"
+     ]
+    },
+    {
+     "id": "chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "Chuseok",
+      "ko": "추석",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2024-09-17"
+     ]
+    },
+    {
+     "id": "the-second-day-of-chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Chuseok",
+      "ko": "추석 다음날",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2024-09-18"
+     ]
+    },
+    {
+     "id": "armed-forces-day",
+     "festival": "armed-forces-day",
+     "kind": "public",
+     "name": {
+      "en": "Armed Forces Day",
+      "ko": "국군의 날",
+      "zh-Hans": "国军日"
+     },
+     "days": [
+      "2024-10-01"
+     ]
+    },
+    {
+     "id": "national-foundation-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Foundation Day",
+      "ko": "개천절",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2024-10-03"
+     ]
+    },
+    {
+     "id": "hangul-day",
+     "festival": "hangeul-day",
+     "kind": "public",
+     "name": {
+      "en": "Hangul Day",
+      "ko": "한글날",
+      "zh-Hans": "韩文日"
+     },
+     "days": [
+      "2024-10-09"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "ko": "기독탄신일",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2024-12-25"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2025": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "ko": "신정연휴",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2025-01-01"
+     ]
+    },
+    {
+     "id": "temporary-public-holiday",
+     "festival": "temporary-holiday",
+     "kind": "public",
+     "name": {
+      "en": "Temporary Public Holiday",
+      "ko": "임시공휴일",
+      "zh-Hans": "临时公休日"
+     },
+     "days": [
+      "2025-01-27"
+     ]
+    },
+    {
+     "id": "the-day-preceding-korean-new-year",
+     "festival": "lunar-new-year-eve",
+     "kind": "public",
+     "name": {
+      "en": "The day preceding Korean New Year",
+      "ko": "설날 전날",
+      "zh-Hans": "除夕"
+     },
+     "days": [
+      "2025-01-28"
+     ]
+    },
+    {
+     "id": "korean-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Korean New Year",
+      "ko": "설날",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2025-01-29"
+     ]
+    },
+    {
+     "id": "the-second-day-of-korean-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Korean New Year",
+      "ko": "설날 다음날",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2025-01-30"
+     ]
+    },
+    {
+     "id": "independence-movement-day",
+     "festival": "independence-movement",
+     "kind": "public",
+     "name": {
+      "en": "Independence Movement Day",
+      "ko": "삼일절",
+      "zh-Hans": "三一节"
+     },
+     "days": [
+      "2025-03-01"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-independence-movement",
+     "festival": "independence-movement",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Independence Movement Day",
+      "ko": "삼일절 대체 휴일",
+      "zh-Hans": "三一节"
+     },
+     "days": [
+      "2025-03-03"
+     ]
+    },
+    {
+     "id": "buddha-s-birthday",
+     "festival": "vesak",
+     "kind": "public",
+     "name": {
+      "en": "Buddha's Birthday",
+      "ko": "부처님오신날",
+      "zh-Hans": "佛诞"
+     },
+     "days": [
+      "2025-05-05"
+     ]
+    },
+    {
+     "id": "children-s-day",
+     "festival": "childrens-day",
+     "kind": "public",
+     "name": {
+      "en": "Children's Day",
+      "ko": "어린이날",
+      "zh-Hans": "儿童节"
+     },
+     "days": [
+      "2025-05-05"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-buddha-s-birthday",
+     "festival": "vesak",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Buddha's Birthday",
+      "ko": "부처님오신날 대체 휴일",
+      "zh-Hans": "佛诞"
+     },
+     "days": [
+      "2025-05-06"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-children-s-day",
+     "festival": "childrens-day",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Children's Day",
+      "ko": "어린이날 대체 휴일",
+      "zh-Hans": "儿童节"
+     },
+     "days": [
+      "2025-05-06"
+     ]
+    },
+    {
+     "id": "presidential-election-day",
+     "festival": "election-day",
+     "kind": "public",
+     "name": {
+      "en": "Presidential Election Day",
+      "ko": "대통령 선거일",
+      "zh-Hans": "选举日"
+     },
+     "days": [
+      "2025-06-03"
+     ]
+    },
+    {
+     "id": "memorial-day",
+     "festival": "memorial-day",
+     "kind": "public",
+     "name": {
+      "en": "Memorial Day",
+      "ko": "현충일",
+      "zh-Hans": "阵亡将士纪念日"
+     },
+     "days": [
+      "2025-06-06"
+     ]
+    },
+    {
+     "id": "liberation-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "Liberation Day",
+      "ko": "광복절",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2025-08-15"
+     ]
+    },
+    {
+     "id": "national-foundation-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Foundation Day",
+      "ko": "개천절",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2025-10-03"
+     ]
+    },
+    {
+     "id": "the-day-preceding-chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The day preceding Chuseok",
+      "ko": "추석 전날",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2025-10-05"
+     ]
+    },
+    {
+     "id": "chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "Chuseok",
+      "ko": "추석",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2025-10-06"
+     ]
+    },
+    {
+     "id": "the-second-day-of-chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Chuseok",
+      "ko": "추석 다음날",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2025-10-07"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-chuseok",
+     "festival": "mid-autumn",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Chuseok",
+      "ko": "추석 대체 휴일",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2025-10-08"
+     ]
+    },
+    {
+     "id": "hangul-day",
+     "festival": "hangeul-day",
+     "kind": "public",
+     "name": {
+      "en": "Hangul Day",
+      "ko": "한글날",
+      "zh-Hans": "韩文日"
+     },
+     "days": [
+      "2025-10-09"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "ko": "기독탄신일",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2025-12-25"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2026": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "ko": "신정연휴",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2026-01-01"
+     ]
+    },
+    {
+     "id": "the-day-preceding-korean-new-year",
+     "festival": "lunar-new-year-eve",
+     "kind": "public",
+     "name": {
+      "en": "The day preceding Korean New Year",
+      "ko": "설날 전날",
+      "zh-Hans": "除夕"
+     },
+     "days": [
+      "2026-02-16"
+     ]
+    },
+    {
+     "id": "korean-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Korean New Year",
+      "ko": "설날",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2026-02-17"
+     ]
+    },
+    {
+     "id": "the-second-day-of-korean-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Korean New Year",
+      "ko": "설날 다음날",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2026-02-18"
+     ]
+    },
+    {
+     "id": "independence-movement-day",
+     "festival": "independence-movement",
+     "kind": "public",
+     "name": {
+      "en": "Independence Movement Day",
+      "ko": "삼일절",
+      "zh-Hans": "三一节"
+     },
+     "days": [
+      "2026-03-01"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-independence-movement",
+     "festival": "independence-movement",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Independence Movement Day",
+      "ko": "삼일절 대체 휴일",
+      "zh-Hans": "三一节"
+     },
+     "days": [
+      "2026-03-02"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "ko": "노동절",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2026-05-01"
+     ]
+    },
+    {
+     "id": "children-s-day",
+     "festival": "childrens-day",
+     "kind": "public",
+     "name": {
+      "en": "Children's Day",
+      "ko": "어린이날",
+      "zh-Hans": "儿童节"
+     },
+     "days": [
+      "2026-05-05"
+     ]
+    },
+    {
+     "id": "buddha-s-birthday",
+     "festival": "vesak",
+     "kind": "public",
+     "name": {
+      "en": "Buddha's Birthday",
+      "ko": "부처님오신날",
+      "zh-Hans": "佛诞"
+     },
+     "days": [
+      "2026-05-24"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-buddha-s-birthday",
+     "festival": "vesak",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Buddha's Birthday",
+      "ko": "부처님오신날 대체 휴일",
+      "zh-Hans": "佛诞"
+     },
+     "days": [
+      "2026-05-25"
+     ]
+    },
+    {
+     "id": "local-election-day",
+     "festival": "election-day",
+     "kind": "public",
+     "name": {
+      "en": "Local Election Day",
+      "ko": "지방선거일",
+      "zh-Hans": "选举日"
+     },
+     "days": [
+      "2026-06-03"
+     ]
+    },
+    {
+     "id": "memorial-day",
+     "festival": "memorial-day",
+     "kind": "public",
+     "name": {
+      "en": "Memorial Day",
+      "ko": "현충일",
+      "zh-Hans": "阵亡将士纪念日"
+     },
+     "days": [
+      "2026-06-06"
+     ]
+    },
+    {
+     "id": "constitution-day",
+     "festival": "constitution-day",
+     "kind": "public",
+     "name": {
+      "en": "Constitution Day",
+      "ko": "제헌절",
+      "zh-Hans": "宪法纪念日"
+     },
+     "days": [
+      "2026-07-17"
+     ]
+    },
+    {
+     "id": "liberation-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "Liberation Day",
+      "ko": "광복절",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2026-08-15"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-liberation-day",
+     "festival": "national-day",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Liberation Day",
+      "ko": "광복절 대체 휴일",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2026-08-17"
+     ]
+    },
+    {
+     "id": "the-day-preceding-chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The day preceding Chuseok",
+      "ko": "추석 전날",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2026-09-24"
+     ]
+    },
+    {
+     "id": "chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "Chuseok",
+      "ko": "추석",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2026-09-25"
+     ]
+    },
+    {
+     "id": "the-second-day-of-chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Chuseok",
+      "ko": "추석 다음날",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2026-09-26"
+     ]
+    },
+    {
+     "id": "national-foundation-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Foundation Day",
+      "ko": "개천절",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2026-10-03"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-national-foundation-day",
+     "festival": "national-day",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for National Foundation Day",
+      "ko": "개천절 대체 휴일",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2026-10-05"
+     ]
+    },
+    {
+     "id": "hangul-day",
+     "festival": "hangeul-day",
+     "kind": "public",
+     "name": {
+      "en": "Hangul Day",
+      "ko": "한글날",
+      "zh-Hans": "韩文日"
+     },
+     "days": [
+      "2026-10-09"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "ko": "기독탄신일",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2026-12-25"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2027": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "ko": "신정연휴",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2027-01-01"
+     ]
+    },
+    {
+     "id": "the-day-preceding-korean-new-year",
+     "festival": "lunar-new-year-eve",
+     "kind": "public",
+     "name": {
+      "en": "The day preceding Korean New Year",
+      "ko": "설날 전날",
+      "zh-Hans": "除夕"
+     },
+     "days": [
+      "2027-02-06"
+     ]
+    },
+    {
+     "id": "korean-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Korean New Year",
+      "ko": "설날",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2027-02-07"
+     ]
+    },
+    {
+     "id": "the-second-day-of-korean-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Korean New Year",
+      "ko": "설날 다음날",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2027-02-08"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-korean-new-year",
+     "festival": "lunar-new-year",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Korean New Year",
+      "ko": "설날 대체 휴일",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2027-02-09"
+     ]
+    },
+    {
+     "id": "independence-movement-day",
+     "festival": "independence-movement",
+     "kind": "public",
+     "name": {
+      "en": "Independence Movement Day",
+      "ko": "삼일절",
+      "zh-Hans": "三一节"
+     },
+     "days": [
+      "2027-03-01"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "ko": "노동절",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2027-05-01"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-labor-day",
+     "festival": "labour-day",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Labor Day",
+      "ko": "노동절 대체 휴일",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2027-05-03"
+     ]
+    },
+    {
+     "id": "children-s-day",
+     "festival": "childrens-day",
+     "kind": "public",
+     "name": {
+      "en": "Children's Day",
+      "ko": "어린이날",
+      "zh-Hans": "儿童节"
+     },
+     "days": [
+      "2027-05-05"
+     ]
+    },
+    {
+     "id": "buddha-s-birthday",
+     "festival": "vesak",
+     "kind": "public",
+     "name": {
+      "en": "Buddha's Birthday",
+      "ko": "부처님오신날",
+      "zh-Hans": "佛诞"
+     },
+     "days": [
+      "2027-05-13"
+     ]
+    },
+    {
+     "id": "memorial-day",
+     "festival": "memorial-day",
+     "kind": "public",
+     "name": {
+      "en": "Memorial Day",
+      "ko": "현충일",
+      "zh-Hans": "阵亡将士纪念日"
+     },
+     "days": [
+      "2027-06-06"
+     ]
+    },
+    {
+     "id": "constitution-day",
+     "festival": "constitution-day",
+     "kind": "public",
+     "name": {
+      "en": "Constitution Day",
+      "ko": "제헌절",
+      "zh-Hans": "宪法纪念日"
+     },
+     "days": [
+      "2027-07-17"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-constitution-day",
+     "festival": "constitution-day",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Constitution Day",
+      "ko": "제헌절 대체 휴일",
+      "zh-Hans": "宪法纪念日"
+     },
+     "days": [
+      "2027-07-19"
+     ]
+    },
+    {
+     "id": "liberation-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "Liberation Day",
+      "ko": "광복절",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2027-08-15"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-liberation-day",
+     "festival": "national-day",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Liberation Day",
+      "ko": "광복절 대체 휴일",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2027-08-16"
+     ]
+    },
+    {
+     "id": "the-day-preceding-chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The day preceding Chuseok",
+      "ko": "추석 전날",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2027-09-14"
+     ]
+    },
+    {
+     "id": "chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "Chuseok",
+      "ko": "추석",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2027-09-15"
+     ]
+    },
+    {
+     "id": "the-second-day-of-chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Chuseok",
+      "ko": "추석 다음날",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2027-09-16"
+     ]
+    },
+    {
+     "id": "national-foundation-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Foundation Day",
+      "ko": "개천절",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2027-10-03"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-national-foundation-day",
+     "festival": "national-day",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for National Foundation Day",
+      "ko": "개천절 대체 휴일",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2027-10-04"
+     ]
+    },
+    {
+     "id": "hangul-day",
+     "festival": "hangeul-day",
+     "kind": "public",
+     "name": {
+      "en": "Hangul Day",
+      "ko": "한글날",
+      "zh-Hans": "韩文日"
+     },
+     "days": [
+      "2027-10-09"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-hangul-day",
+     "festival": "hangeul-day",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Hangul Day",
+      "ko": "한글날 대체 휴일",
+      "zh-Hans": "韩文日"
+     },
+     "days": [
+      "2027-10-11"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "ko": "기독탄신일",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2027-12-25"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-christmas-day",
+     "festival": "christmas",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Christmas Day",
+      "ko": "기독탄신일 대체 휴일",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2027-12-27"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2028": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "ko": "신정연휴",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2028-01-01"
+     ]
+    },
+    {
+     "id": "the-day-preceding-korean-new-year",
+     "festival": "lunar-new-year-eve",
+     "kind": "public",
+     "name": {
+      "en": "The day preceding Korean New Year",
+      "ko": "설날 전날",
+      "zh-Hans": "除夕"
+     },
+     "days": [
+      "2028-01-26"
+     ]
+    },
+    {
+     "id": "korean-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "Korean New Year",
+      "ko": "설날",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2028-01-27"
+     ]
+    },
+    {
+     "id": "the-second-day-of-korean-new-year",
+     "festival": "lunar-new-year",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Korean New Year",
+      "ko": "설날 다음날",
+      "zh-Hans": "春节"
+     },
+     "days": [
+      "2028-01-28"
+     ]
+    },
+    {
+     "id": "independence-movement-day",
+     "festival": "independence-movement",
+     "kind": "public",
+     "name": {
+      "en": "Independence Movement Day",
+      "ko": "삼일절",
+      "zh-Hans": "三一节"
+     },
+     "days": [
+      "2028-03-01"
+     ]
+    },
+    {
+     "id": "national-assembly-election-day",
+     "festival": "election-day",
+     "kind": "public",
+     "name": {
+      "en": "National Assembly Election Day",
+      "ko": "국회의원 선거일",
+      "zh-Hans": "选举日"
+     },
+     "days": [
+      "2028-04-12"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "ko": "노동절",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2028-05-01"
+     ]
+    },
+    {
+     "id": "buddha-s-birthday",
+     "festival": "vesak",
+     "kind": "public",
+     "name": {
+      "en": "Buddha's Birthday",
+      "ko": "부처님오신날",
+      "zh-Hans": "佛诞"
+     },
+     "days": [
+      "2028-05-02"
+     ]
+    },
+    {
+     "id": "children-s-day",
+     "festival": "childrens-day",
+     "kind": "public",
+     "name": {
+      "en": "Children's Day",
+      "ko": "어린이날",
+      "zh-Hans": "儿童节"
+     },
+     "days": [
+      "2028-05-05"
+     ]
+    },
+    {
+     "id": "memorial-day",
+     "festival": "memorial-day",
+     "kind": "public",
+     "name": {
+      "en": "Memorial Day",
+      "ko": "현충일",
+      "zh-Hans": "阵亡将士纪念日"
+     },
+     "days": [
+      "2028-06-06"
+     ]
+    },
+    {
+     "id": "constitution-day",
+     "festival": "constitution-day",
+     "kind": "public",
+     "name": {
+      "en": "Constitution Day",
+      "ko": "제헌절",
+      "zh-Hans": "宪法纪念日"
+     },
+     "days": [
+      "2028-07-17"
+     ]
+    },
+    {
+     "id": "liberation-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "Liberation Day",
+      "ko": "광복절",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2028-08-15"
+     ]
+    },
+    {
+     "id": "the-day-preceding-chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The day preceding Chuseok",
+      "ko": "추석 전날",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2028-10-02"
+     ]
+    },
+    {
+     "id": "chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "Chuseok",
+      "ko": "개천절",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2028-10-03"
+     ]
+    },
+    {
+     "id": "national-foundation-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "National Foundation Day",
+      "ko": "추석",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2028-10-03"
+     ]
+    },
+    {
+     "id": "the-second-day-of-chuseok",
+     "festival": "mid-autumn",
+     "kind": "public",
+     "name": {
+      "en": "The second day of Chuseok",
+      "ko": "추석 다음날",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2028-10-04"
+     ]
+    },
+    {
+     "id": "alternative-holiday-for-chuseok",
+     "festival": "mid-autumn",
+     "kind": "substitute",
+     "name": {
+      "en": "Alternative holiday for Chuseok",
+      "ko": "추석 대체 휴일",
+      "zh-Hans": "中秋节"
+     },
+     "days": [
+      "2028-10-05"
+     ]
+    },
+    {
+     "id": "hangul-day",
+     "festival": "hangeul-day",
+     "kind": "public",
+     "name": {
+      "en": "Hangul Day",
+      "ko": "한글날",
+      "zh-Hans": "韩文日"
+     },
+     "days": [
+      "2028-10-09"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "ko": "기독탄신일",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2028-12-25"
+     ]
+    }
+   ],
+   "workdays": []
+  }
+ }
+}

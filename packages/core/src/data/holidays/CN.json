@@ -1,0 +1,370 @@
+{
+ "region": "CN",
+ "name": {
+  "zh-Hans": "中国大陆",
+  "en": "Mainland China"
+ },
+ "weekend": [
+  6,
+  0
+ ],
+ "tz": "Asia/Shanghai",
+ "data_version": "2026.09.18",
+ "generated_at": "2026-09-18T01:11:54+00:00",
+ "verified_until": 2026,
+ "statutory_note": "《全国年节及纪念日放假办法》2024 年修订：元旦 1 天、春节 4 天（除夕至初三）、清明 1 天、劳动节 2 天（5/1-5/2）、端午 1 天、中秋 1 天、国庆 3 天，共 13 天。",
+ "years": {
+  "2024": {
+   "source": "official",
+   "source_ref": "国务院办公厅关于2024年部分节假日安排的通知（国办发明电〔2023〕7号）",
+   "holidays": [
+    {
+     "id": "new-year",
+     "name": {
+      "zh-Hans": "元旦",
+      "en": "New Year's Day"
+     },
+     "days": [
+      "2024-01-01"
+     ],
+     "festival": "new-year",
+     "kind": "public"
+    },
+    {
+     "id": "spring-festival",
+     "name": {
+      "zh-Hans": "春节",
+      "en": "Chinese New Year"
+     },
+     "days": [
+      "2024-02-10",
+      "2024-02-11",
+      "2024-02-12",
+      "2024-02-13",
+      "2024-02-14",
+      "2024-02-15",
+      "2024-02-16",
+      "2024-02-17"
+     ],
+     "festival": "lunar-new-year",
+     "kind": "public"
+    },
+    {
+     "id": "qingming",
+     "name": {
+      "zh-Hans": "清明节",
+      "en": "Qingming Festival"
+     },
+     "days": [
+      "2024-04-04",
+      "2024-04-05",
+      "2024-04-06"
+     ],
+     "festival": "qingming",
+     "kind": "public"
+    },
+    {
+     "id": "labour-day",
+     "name": {
+      "zh-Hans": "劳动节",
+      "en": "Labour Day"
+     },
+     "days": [
+      "2024-05-01",
+      "2024-05-02",
+      "2024-05-03",
+      "2024-05-04",
+      "2024-05-05"
+     ],
+     "festival": "labour-day",
+     "kind": "public"
+    },
+    {
+     "id": "dragon-boat",
+     "name": {
+      "zh-Hans": "端午节",
+      "en": "Dragon Boat Festival"
+     },
+     "days": [
+      "2024-06-10"
+     ],
+     "festival": "dragon-boat",
+     "kind": "public"
+    },
+    {
+     "id": "mid-autumn",
+     "name": {
+      "zh-Hans": "中秋节",
+      "en": "Mid-Autumn Festival"
+     },
+     "days": [
+      "2024-09-15",
+      "2024-09-16",
+      "2024-09-17"
+     ],
+     "festival": "mid-autumn",
+     "kind": "public"
+    },
+    {
+     "id": "national-day",
+     "name": {
+      "zh-Hans": "国庆节",
+      "en": "National Day"
+     },
+     "days": [
+      "2024-10-01",
+      "2024-10-02",
+      "2024-10-03",
+      "2024-10-04",
+      "2024-10-05",
+      "2024-10-06",
+      "2024-10-07"
+     ],
+     "festival": "national-day",
+     "kind": "public"
+    }
+   ],
+   "workdays": [
+    "2024-02-04",
+    "2024-02-18",
+    "2024-04-07",
+    "2024-04-28",
+    "2024-05-11",
+    "2024-09-14",
+    "2024-09-29",
+    "2024-10-12"
+   ]
+  },
+  "2025": {
+   "source": "official",
+   "source_ref": "国务院办公厅关于2025年部分节假日安排的通知（国办发明电〔2024〕12号）",
+   "holidays": [
+    {
+     "id": "new-year",
+     "name": {
+      "zh-Hans": "元旦",
+      "en": "New Year's Day"
+     },
+     "days": [
+      "2025-01-01"
+     ],
+     "festival": "new-year",
+     "kind": "public"
+    },
+    {
+     "id": "spring-festival",
+     "name": {
+      "zh-Hans": "春节",
+      "en": "Chinese New Year"
+     },
+     "days": [
+      "2025-01-28",
+      "2025-01-29",
+      "2025-01-30",
+      "2025-01-31",
+      "2025-02-01",
+      "2025-02-02",
+      "2025-02-03",
+      "2025-02-04"
+     ],
+     "festival": "lunar-new-year",
+     "kind": "public"
+    },
+    {
+     "id": "qingming",
+     "name": {
+      "zh-Hans": "清明节",
+      "en": "Qingming Festival"
+     },
+     "days": [
+      "2025-04-04",
+      "2025-04-05",
+      "2025-04-06"
+     ],
+     "festival": "qingming",
+     "kind": "public"
+    },
+    {
+     "id": "labour-day",
+     "name": {
+      "zh-Hans": "劳动节",
+      "en": "Labour Day"
+     },
+     "days": [
+      "2025-05-01",
+      "2025-05-02",
+      "2025-05-03",
+      "2025-05-04",
+      "2025-05-05"
+     ],
+     "festival": "labour-day",
+     "kind": "public"
+    },
+    {
+     "id": "dragon-boat",
+     "name": {
+      "zh-Hans": "端午节",
+      "en": "Dragon Boat Festival"
+     },
+     "days": [
+      "2025-05-31",
+      "2025-06-01",
+      "2025-06-02"
+     ],
+     "festival": "dragon-boat",
+     "kind": "public"
+    },
+    {
+     "id": "national-day-mid-autumn",
+     "name": {
+      "zh-Hans": "国庆节、中秋节",
+      "en": "National Day & Mid-Autumn Festival"
+     },
+     "days": [
+      "2025-10-01",
+      "2025-10-02",
+      "2025-10-03",
+      "2025-10-04",
+      "2025-10-05",
+      "2025-10-06",
+      "2025-10-07",
+      "2025-10-08"
+     ],
+     "festival": "national-day",
+     "kind": "public"
+    }
+   ],
+   "workdays": [
+    "2025-01-26",
+    "2025-02-08",
+    "2025-04-27",
+    "2025-09-28",
+    "2025-10-11"
+   ]
+  },
+  "2026": {
+   "source": "official",
+   "source_ref": "国务院办公厅关于2026年部分节假日安排的通知（2025-11-04）",
+   "holidays": [
+    {
+     "id": "new-year",
+     "name": {
+      "zh-Hans": "元旦",
+      "en": "New Year's Day"
+     },
+     "days": [
+      "2026-01-01",
+      "2026-01-02",
+      "2026-01-03"
+     ],
+     "festival": "new-year",
+     "kind": "public"
+    },
+    {
+     "id": "spring-festival",
+     "name": {
+      "zh-Hans": "春节",
+      "en": "Chinese New Year"
+     },
+     "days": [
+      "2026-02-15",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-02-19",
+      "2026-02-20",
+      "2026-02-21",
+      "2026-02-22",
+      "2026-02-23"
+     ],
+     "festival": "lunar-new-year",
+     "kind": "public"
+    },
+    {
+     "id": "qingming",
+     "name": {
+      "zh-Hans": "清明节",
+      "en": "Qingming Festival"
+     },
+     "days": [
+      "2026-04-04",
+      "2026-04-05",
+      "2026-04-06"
+     ],
+     "festival": "qingming",
+     "kind": "public"
+    },
+    {
+     "id": "labour-day",
+     "name": {
+      "zh-Hans": "劳动节",
+      "en": "Labour Day"
+     },
+     "days": [
+      "2026-05-01",
+      "2026-05-02",
+      "2026-05-03",
+      "2026-05-04",
+      "2026-05-05"
+     ],
+     "festival": "labour-day",
+     "kind": "public"
+    },
+    {
+     "id": "dragon-boat",
+     "name": {
+      "zh-Hans": "端午节",
+      "en": "Dragon Boat Festival"
+     },
+     "days": [
+      "2026-06-19",
+      "2026-06-20",
+      "2026-06-21"
+     ],
+     "festival": "dragon-boat",
+     "kind": "public"
+    },
+    {
+     "id": "mid-autumn",
+     "name": {
+      "zh-Hans": "中秋节",
+      "en": "Mid-Autumn Festival"
+     },
+     "days": [
+      "2026-09-25",
+      "2026-09-26",
+      "2026-09-27"
+     ],
+     "festival": "mid-autumn",
+     "kind": "public"
+    },
+    {
+     "id": "national-day",
+     "name": {
+      "zh-Hans": "国庆节",
+      "en": "National Day"
+     },
+     "days": [
+      "2026-10-01",
+      "2026-10-02",
+      "2026-10-03",
+      "2026-10-04",
+      "2026-10-05",
+      "2026-10-06",
+      "2026-10-07"
+     ],
+     "festival": "national-day",
+     "kind": "public"
+    }
+   ],
+   "workdays": [
+    "2026-01-04",
+    "2026-02-14",
+    "2026-02-28",
+    "2026-05-09",
+    "2026-09-20",
+    "2026-10-10"
+   ]
+  }
+ }
+}

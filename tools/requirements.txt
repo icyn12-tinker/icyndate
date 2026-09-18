@@ -1,0 +1,7 @@
+# Dependencies of `npm run check` — nothing else. One package, pure Python, no compiler.
+#   python3 -m pip install -r tools/requirements.txt
+#   (externally-managed environment? use a venv, or add --break-system-packages)
+#
+# Cross-check of CN holiday day status (tools/check_cn_holidays.py). A floor, not a pin: this is a
+# data package, and a newer release covers more years, i.e. verifies more of our table.
+chinesecalendar>=1.11.0

@@ -1,0 +1,3240 @@
+{
+ "region": "DE",
+ "name": {
+  "zh-Hans": "德国",
+  "en": "Germany"
+ },
+ "weekend": [
+  6,
+  0
+ ],
+ "tz": "Europe/Berlin",
+ "data_version": "2026.09.18",
+ "generated_at": "2026-09-18T01:28:06+00:00",
+ "verified_until": null,
+ "baseline_note": "Generated from python-holidays 0.104; not yet verified against the official gazette.",
+ "years": {
+  "2024": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "de": "Neujahr",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2024-01-01"
+     ]
+    },
+    {
+     "id": "good-friday",
+     "festival": "good-friday",
+     "kind": "public",
+     "name": {
+      "en": "Good Friday",
+      "de": "Karfreitag",
+      "zh-Hans": "耶稣受难日"
+     },
+     "days": [
+      "2024-03-29"
+     ]
+    },
+    {
+     "id": "easter-monday",
+     "festival": "easter-monday",
+     "kind": "public",
+     "name": {
+      "en": "Easter Monday",
+      "de": "Ostermontag",
+      "zh-Hans": "复活节星期一"
+     },
+     "days": [
+      "2024-04-01"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "de": "Erster Mai",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2024-05-01"
+     ]
+    },
+    {
+     "id": "ascension-day",
+     "festival": "ascension",
+     "kind": "public",
+     "name": {
+      "en": "Ascension Day",
+      "de": "Christi Himmelfahrt",
+      "zh-Hans": "耶稣升天节"
+     },
+     "days": [
+      "2024-05-09"
+     ]
+    },
+    {
+     "id": "pentecost-monday",
+     "festival": "whit-monday",
+     "kind": "public",
+     "name": {
+      "en": "Pentecost Monday",
+      "de": "Pfingstmontag",
+      "zh-Hans": "圣灵降临节星期一"
+     },
+     "days": [
+      "2024-05-20"
+     ]
+    },
+    {
+     "id": "german-unity-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "German Unity Day",
+      "de": "Tag der Deutschen Einheit",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2024-10-03"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "de": "Erster Weihnachtstag",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2024-12-25"
+     ]
+    },
+    {
+     "id": "second-day-of-christmas",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Second Day of Christmas",
+      "de": "Zweiter Weihnachtstag",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2024-12-26"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2025": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "de": "Neujahr",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2025-01-01"
+     ]
+    },
+    {
+     "id": "good-friday",
+     "festival": "good-friday",
+     "kind": "public",
+     "name": {
+      "en": "Good Friday",
+      "de": "Karfreitag",
+      "zh-Hans": "耶稣受难日"
+     },
+     "days": [
+      "2025-04-18"
+     ]
+    },
+    {
+     "id": "easter-monday",
+     "festival": "easter-monday",
+     "kind": "public",
+     "name": {
+      "en": "Easter Monday",
+      "de": "Ostermontag",
+      "zh-Hans": "复活节星期一"
+     },
+     "days": [
+      "2025-04-21"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "de": "Erster Mai",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2025-05-01"
+     ]
+    },
+    {
+     "id": "ascension-day",
+     "festival": "ascension",
+     "kind": "public",
+     "name": {
+      "en": "Ascension Day",
+      "de": "Christi Himmelfahrt",
+      "zh-Hans": "耶稣升天节"
+     },
+     "days": [
+      "2025-05-29"
+     ]
+    },
+    {
+     "id": "pentecost-monday",
+     "festival": "whit-monday",
+     "kind": "public",
+     "name": {
+      "en": "Pentecost Monday",
+      "de": "Pfingstmontag",
+      "zh-Hans": "圣灵降临节星期一"
+     },
+     "days": [
+      "2025-06-09"
+     ]
+    },
+    {
+     "id": "german-unity-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "German Unity Day",
+      "de": "Tag der Deutschen Einheit",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2025-10-03"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "de": "Erster Weihnachtstag",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2025-12-25"
+     ]
+    },
+    {
+     "id": "second-day-of-christmas",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Second Day of Christmas",
+      "de": "Zweiter Weihnachtstag",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2025-12-26"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2026": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "de": "Neujahr",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2026-01-01"
+     ]
+    },
+    {
+     "id": "good-friday",
+     "festival": "good-friday",
+     "kind": "public",
+     "name": {
+      "en": "Good Friday",
+      "de": "Karfreitag",
+      "zh-Hans": "耶稣受难日"
+     },
+     "days": [
+      "2026-04-03"
+     ]
+    },
+    {
+     "id": "easter-monday",
+     "festival": "easter-monday",
+     "kind": "public",
+     "name": {
+      "en": "Easter Monday",
+      "de": "Ostermontag",
+      "zh-Hans": "复活节星期一"
+     },
+     "days": [
+      "2026-04-06"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "de": "Erster Mai",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2026-05-01"
+     ]
+    },
+    {
+     "id": "ascension-day",
+     "festival": "ascension",
+     "kind": "public",
+     "name": {
+      "en": "Ascension Day",
+      "de": "Christi Himmelfahrt",
+      "zh-Hans": "耶稣升天节"
+     },
+     "days": [
+      "2026-05-14"
+     ]
+    },
+    {
+     "id": "pentecost-monday",
+     "festival": "whit-monday",
+     "kind": "public",
+     "name": {
+      "en": "Pentecost Monday",
+      "de": "Pfingstmontag",
+      "zh-Hans": "圣灵降临节星期一"
+     },
+     "days": [
+      "2026-05-25"
+     ]
+    },
+    {
+     "id": "german-unity-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "German Unity Day",
+      "de": "Tag der Deutschen Einheit",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2026-10-03"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "de": "Erster Weihnachtstag",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2026-12-25"
+     ]
+    },
+    {
+     "id": "second-day-of-christmas",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Second Day of Christmas",
+      "de": "Zweiter Weihnachtstag",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2026-12-26"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2027": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "de": "Neujahr",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2027-01-01"
+     ]
+    },
+    {
+     "id": "good-friday",
+     "festival": "good-friday",
+     "kind": "public",
+     "name": {
+      "en": "Good Friday",
+      "de": "Karfreitag",
+      "zh-Hans": "耶稣受难日"
+     },
+     "days": [
+      "2027-03-26"
+     ]
+    },
+    {
+     "id": "easter-monday",
+     "festival": "easter-monday",
+     "kind": "public",
+     "name": {
+      "en": "Easter Monday",
+      "de": "Ostermontag",
+      "zh-Hans": "复活节星期一"
+     },
+     "days": [
+      "2027-03-29"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "de": "Erster Mai",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2027-05-01"
+     ]
+    },
+    {
+     "id": "ascension-day",
+     "festival": "ascension",
+     "kind": "public",
+     "name": {
+      "en": "Ascension Day",
+      "de": "Christi Himmelfahrt",
+      "zh-Hans": "耶稣升天节"
+     },
+     "days": [
+      "2027-05-06"
+     ]
+    },
+    {
+     "id": "pentecost-monday",
+     "festival": "whit-monday",
+     "kind": "public",
+     "name": {
+      "en": "Pentecost Monday",
+      "de": "Pfingstmontag",
+      "zh-Hans": "圣灵降临节星期一"
+     },
+     "days": [
+      "2027-05-17"
+     ]
+    },
+    {
+     "id": "german-unity-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "German Unity Day",
+      "de": "Tag der Deutschen Einheit",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2027-10-03"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "de": "Erster Weihnachtstag",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2027-12-25"
+     ]
+    },
+    {
+     "id": "second-day-of-christmas",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Second Day of Christmas",
+      "de": "Zweiter Weihnachtstag",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2027-12-26"
+     ]
+    }
+   ],
+   "workdays": []
+  },
+  "2028": {
+   "source": "baseline",
+   "source_ref": "python-holidays 0.104",
+   "holidays": [
+    {
+     "id": "new-year-s-day",
+     "festival": "new-year",
+     "kind": "public",
+     "name": {
+      "en": "New Year's Day",
+      "de": "Neujahr",
+      "zh-Hans": "元旦"
+     },
+     "days": [
+      "2028-01-01"
+     ]
+    },
+    {
+     "id": "good-friday",
+     "festival": "good-friday",
+     "kind": "public",
+     "name": {
+      "en": "Good Friday",
+      "de": "Karfreitag",
+      "zh-Hans": "耶稣受难日"
+     },
+     "days": [
+      "2028-04-14"
+     ]
+    },
+    {
+     "id": "easter-monday",
+     "festival": "easter-monday",
+     "kind": "public",
+     "name": {
+      "en": "Easter Monday",
+      "de": "Ostermontag",
+      "zh-Hans": "复活节星期一"
+     },
+     "days": [
+      "2028-04-17"
+     ]
+    },
+    {
+     "id": "labor-day",
+     "festival": "labour-day",
+     "kind": "public",
+     "name": {
+      "en": "Labor Day",
+      "de": "Erster Mai",
+      "zh-Hans": "劳动节"
+     },
+     "days": [
+      "2028-05-01"
+     ]
+    },
+    {
+     "id": "ascension-day",
+     "festival": "ascension",
+     "kind": "public",
+     "name": {
+      "en": "Ascension Day",
+      "de": "Christi Himmelfahrt",
+      "zh-Hans": "耶稣升天节"
+     },
+     "days": [
+      "2028-05-25"
+     ]
+    },
+    {
+     "id": "pentecost-monday",
+     "festival": "whit-monday",
+     "kind": "public",
+     "name": {
+      "en": "Pentecost Monday",
+      "de": "Pfingstmontag",
+      "zh-Hans": "圣灵降临节星期一"
+     },
+     "days": [
+      "2028-06-05"
+     ]
+    },
+    {
+     "id": "german-unity-day",
+     "festival": "national-day",
+     "kind": "public",
+     "name": {
+      "en": "German Unity Day",
+      "de": "Tag der Deutschen Einheit",
+      "zh-Hans": "国庆日"
+     },
+     "days": [
+      "2028-10-03"
+     ]
+    },
+    {
+     "id": "christmas-day",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Christmas Day",
+      "de": "Erster Weihnachtstag",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2028-12-25"
+     ]
+    },
+    {
+     "id": "second-day-of-christmas",
+     "festival": "christmas",
+     "kind": "public",
+     "name": {
+      "en": "Second Day of Christmas",
+      "de": "Zweiter Weihnachtstag",
+      "zh-Hans": "圣诞节"
+     },
+     "days": [
+      "2028-12-26"
+     ]
+    }
+   ],
+   "workdays": []
+  }
+ },
+ "subdivisions": {
+  "BB": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "easter-sunday",
+       "festival": "easter",
+       "kind": "public",
+       "name": {
+        "en": "Easter Sunday",
+        "de": "Ostersonntag",
+        "zh-Hans": "复活节"
+       },
+       "days": [
+        "2024-03-31"
+       ]
+      },
+      {
+       "id": "pentecost",
+       "festival": "whit-sunday",
+       "kind": "public",
+       "name": {
+        "en": "Pentecost",
+        "de": "Pfingstsonntag",
+        "zh-Hans": "圣灵降临节"
+       },
+       "days": [
+        "2024-05-19"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2024-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "easter-sunday",
+       "festival": "easter",
+       "kind": "public",
+       "name": {
+        "en": "Easter Sunday",
+        "de": "Ostersonntag",
+        "zh-Hans": "复活节"
+       },
+       "days": [
+        "2025-04-20"
+       ]
+      },
+      {
+       "id": "pentecost",
+       "festival": "whit-sunday",
+       "kind": "public",
+       "name": {
+        "en": "Pentecost",
+        "de": "Pfingstsonntag",
+        "zh-Hans": "圣灵降临节"
+       },
+       "days": [
+        "2025-06-08"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2025-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "easter-sunday",
+       "festival": "easter",
+       "kind": "public",
+       "name": {
+        "en": "Easter Sunday",
+        "de": "Ostersonntag",
+        "zh-Hans": "复活节"
+       },
+       "days": [
+        "2026-04-05"
+       ]
+      },
+      {
+       "id": "pentecost",
+       "festival": "whit-sunday",
+       "kind": "public",
+       "name": {
+        "en": "Pentecost",
+        "de": "Pfingstsonntag",
+        "zh-Hans": "圣灵降临节"
+       },
+       "days": [
+        "2026-05-24"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2026-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "easter-sunday",
+       "festival": "easter",
+       "kind": "public",
+       "name": {
+        "en": "Easter Sunday",
+        "de": "Ostersonntag",
+        "zh-Hans": "复活节"
+       },
+       "days": [
+        "2027-03-28"
+       ]
+      },
+      {
+       "id": "pentecost",
+       "festival": "whit-sunday",
+       "kind": "public",
+       "name": {
+        "en": "Pentecost",
+        "de": "Pfingstsonntag",
+        "zh-Hans": "圣灵降临节"
+       },
+       "days": [
+        "2027-05-16"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2027-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "easter-sunday",
+       "festival": "easter",
+       "kind": "public",
+       "name": {
+        "en": "Easter Sunday",
+        "de": "Ostersonntag",
+        "zh-Hans": "复活节"
+       },
+       "days": [
+        "2028-04-16"
+       ]
+      },
+      {
+       "id": "pentecost",
+       "festival": "whit-sunday",
+       "kind": "public",
+       "name": {
+        "en": "Pentecost",
+        "de": "Pfingstsonntag",
+        "zh-Hans": "圣灵降临节"
+       },
+       "days": [
+        "2028-06-04"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2028-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "BE": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "women-s-day",
+       "festival": "womens-day",
+       "kind": "public",
+       "name": {
+        "en": "Women's Day",
+        "de": "Frauentag",
+        "zh-Hans": "妇女节"
+       },
+       "days": [
+        "2024-03-08"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "women-s-day",
+       "festival": "womens-day",
+       "kind": "public",
+       "name": {
+        "en": "Women's Day",
+        "de": "Frauentag",
+        "zh-Hans": "妇女节"
+       },
+       "days": [
+        "2025-03-08"
+       ]
+      },
+      {
+       "id": "80th-anniversary-of-the-liberation-from-nazism",
+       "festival": "anniversary",
+       "kind": "public",
+       "name": {
+        "en": "80th anniversary of the liberation from Nazism and the end of the Second World War in Europe",
+        "de": "80. Jahrestag der Befreiung vom Nationalsozialismus und der Beendigung des Zweiten Weltkriegs in Europa",
+        "zh-Hans": "周年纪念日"
+       },
+       "days": [
+        "2025-05-08"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "women-s-day",
+       "festival": "womens-day",
+       "kind": "public",
+       "name": {
+        "en": "Women's Day",
+        "de": "Frauentag",
+        "zh-Hans": "妇女节"
+       },
+       "days": [
+        "2026-03-08"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "women-s-day",
+       "festival": "womens-day",
+       "kind": "public",
+       "name": {
+        "en": "Women's Day",
+        "de": "Frauentag",
+        "zh-Hans": "妇女节"
+       },
+       "days": [
+        "2027-03-08"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "women-s-day",
+       "festival": "womens-day",
+       "kind": "public",
+       "name": {
+        "en": "Women's Day",
+        "de": "Frauentag",
+        "zh-Hans": "妇女节"
+       },
+       "days": [
+        "2028-03-08"
+       ]
+      },
+      {
+       "id": "75th-anniversary-of-the-east-german-uprising-of",
+       "festival": "anniversary",
+       "kind": "public",
+       "name": {
+        "en": "75th anniversary of the East German uprising of 1953",
+        "de": "75. Jahrestag des Aufstandes vom 17. Juni 1953",
+        "zh-Hans": "周年纪念日"
+       },
+       "days": [
+        "2028-06-17"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "BW": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2024-01-06"
+       ]
+      },
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2024-05-30"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2024-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2025-01-06"
+       ]
+      },
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2025-06-19"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2025-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2026-01-06"
+       ]
+      },
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2026-06-04"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2026-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2027-01-06"
+       ]
+      },
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2027-05-27"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2027-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2028-01-06"
+       ]
+      },
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2028-06-15"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2028-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "BY": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2024-01-06"
+       ]
+      },
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2024-05-30"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2024-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2025-01-06"
+       ]
+      },
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2025-06-19"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2025-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2026-01-06"
+       ]
+      },
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2026-06-04"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2026-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2027-01-06"
+       ]
+      },
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2027-05-27"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2027-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2028-01-06"
+       ]
+      },
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2028-06-15"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2028-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "HB": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2024-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2025-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2026-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2027-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2028-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "HE": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2024-05-30"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2025-06-19"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2026-06-04"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2027-05-27"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2028-06-15"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "HH": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2024-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2025-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2026-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2027-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2028-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "MV": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "women-s-day",
+       "festival": "womens-day",
+       "kind": "public",
+       "name": {
+        "en": "Women's Day",
+        "de": "Frauentag",
+        "zh-Hans": "妇女节"
+       },
+       "days": [
+        "2024-03-08"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2024-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "women-s-day",
+       "festival": "womens-day",
+       "kind": "public",
+       "name": {
+        "en": "Women's Day",
+        "de": "Frauentag",
+        "zh-Hans": "妇女节"
+       },
+       "days": [
+        "2025-03-08"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2025-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "women-s-day",
+       "festival": "womens-day",
+       "kind": "public",
+       "name": {
+        "en": "Women's Day",
+        "de": "Frauentag",
+        "zh-Hans": "妇女节"
+       },
+       "days": [
+        "2026-03-08"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2026-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "women-s-day",
+       "festival": "womens-day",
+       "kind": "public",
+       "name": {
+        "en": "Women's Day",
+        "de": "Frauentag",
+        "zh-Hans": "妇女节"
+       },
+       "days": [
+        "2027-03-08"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2027-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "women-s-day",
+       "festival": "womens-day",
+       "kind": "public",
+       "name": {
+        "en": "Women's Day",
+        "de": "Frauentag",
+        "zh-Hans": "妇女节"
+       },
+       "days": [
+        "2028-03-08"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2028-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "NI": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2024-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2025-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2026-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2027-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2028-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "NW": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2024-05-30"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2024-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2025-06-19"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2025-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2026-06-04"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2026-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2027-05-27"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2027-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2028-06-15"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2028-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "RP": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2024-05-30"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2024-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2025-06-19"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2025-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2026-06-04"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2026-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2027-05-27"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2027-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2028-06-15"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2028-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "SH": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2024-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2025-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2026-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2027-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2028-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "SL": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2024-05-30"
+       ]
+      },
+      {
+       "id": "assumption-day",
+       "festival": "assumption",
+       "kind": "public",
+       "name": {
+        "en": "Assumption Day",
+        "de": "Mariä Himmelfahrt",
+        "zh-Hans": "圣母升天节"
+       },
+       "days": [
+        "2024-08-15"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2024-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2025-06-19"
+       ]
+      },
+      {
+       "id": "assumption-day",
+       "festival": "assumption",
+       "kind": "public",
+       "name": {
+        "en": "Assumption Day",
+        "de": "Mariä Himmelfahrt",
+        "zh-Hans": "圣母升天节"
+       },
+       "days": [
+        "2025-08-15"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2025-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2026-06-04"
+       ]
+      },
+      {
+       "id": "assumption-day",
+       "festival": "assumption",
+       "kind": "public",
+       "name": {
+        "en": "Assumption Day",
+        "de": "Mariä Himmelfahrt",
+        "zh-Hans": "圣母升天节"
+       },
+       "days": [
+        "2026-08-15"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2026-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2027-05-27"
+       ]
+      },
+      {
+       "id": "assumption-day",
+       "festival": "assumption",
+       "kind": "public",
+       "name": {
+        "en": "Assumption Day",
+        "de": "Mariä Himmelfahrt",
+        "zh-Hans": "圣母升天节"
+       },
+       "days": [
+        "2027-08-15"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2027-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "corpus-christi",
+       "festival": "corpus-christi",
+       "kind": "public",
+       "name": {
+        "en": "Corpus Christi",
+        "de": "Fronleichnam",
+        "zh-Hans": "基督圣体节"
+       },
+       "days": [
+        "2028-06-15"
+       ]
+      },
+      {
+       "id": "assumption-day",
+       "festival": "assumption",
+       "kind": "public",
+       "name": {
+        "en": "Assumption Day",
+        "de": "Mariä Himmelfahrt",
+        "zh-Hans": "圣母升天节"
+       },
+       "days": [
+        "2028-08-15"
+       ]
+      },
+      {
+       "id": "all-saints-day",
+       "festival": "all-saints",
+       "kind": "public",
+       "name": {
+        "en": "All Saints' Day",
+        "de": "Allerheiligen",
+        "zh-Hans": "诸圣节"
+       },
+       "days": [
+        "2028-11-01"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "SN": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2024-10-31"
+       ]
+      },
+      {
+       "id": "repentance-and-prayer-day",
+       "festival": "repentance-day",
+       "kind": "public",
+       "name": {
+        "en": "Repentance and Prayer Day",
+        "de": "Buß- und Bettag",
+        "zh-Hans": "忏悔祈祷日"
+       },
+       "days": [
+        "2024-11-20"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2025-10-31"
+       ]
+      },
+      {
+       "id": "repentance-and-prayer-day",
+       "festival": "repentance-day",
+       "kind": "public",
+       "name": {
+        "en": "Repentance and Prayer Day",
+        "de": "Buß- und Bettag",
+        "zh-Hans": "忏悔祈祷日"
+       },
+       "days": [
+        "2025-11-19"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2026-10-31"
+       ]
+      },
+      {
+       "id": "repentance-and-prayer-day",
+       "festival": "repentance-day",
+       "kind": "public",
+       "name": {
+        "en": "Repentance and Prayer Day",
+        "de": "Buß- und Bettag",
+        "zh-Hans": "忏悔祈祷日"
+       },
+       "days": [
+        "2026-11-18"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2027-10-31"
+       ]
+      },
+      {
+       "id": "repentance-and-prayer-day",
+       "festival": "repentance-day",
+       "kind": "public",
+       "name": {
+        "en": "Repentance and Prayer Day",
+        "de": "Buß- und Bettag",
+        "zh-Hans": "忏悔祈祷日"
+       },
+       "days": [
+        "2027-11-17"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2028-10-31"
+       ]
+      },
+      {
+       "id": "repentance-and-prayer-day",
+       "festival": "repentance-day",
+       "kind": "public",
+       "name": {
+        "en": "Repentance and Prayer Day",
+        "de": "Buß- und Bettag",
+        "zh-Hans": "忏悔祈祷日"
+       },
+       "days": [
+        "2028-11-22"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "ST": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2024-01-06"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2024-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2025-01-06"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2025-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2026-01-06"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2026-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2027-01-06"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2027-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "epiphany",
+       "festival": "epiphany",
+       "kind": "public",
+       "name": {
+        "en": "Epiphany",
+        "de": "Heilige Drei Könige",
+        "zh-Hans": "主显节"
+       },
+       "days": [
+        "2028-01-06"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2028-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  },
+  "TH": {
+   "years": {
+    "2024": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "world-children-s-day",
+       "festival": "childrens-day",
+       "kind": "public",
+       "name": {
+        "en": "World Children's Day",
+        "de": "Weltkindertag",
+        "zh-Hans": "儿童节"
+       },
+       "days": [
+        "2024-09-20"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2024-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2025": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "world-children-s-day",
+       "festival": "childrens-day",
+       "kind": "public",
+       "name": {
+        "en": "World Children's Day",
+        "de": "Weltkindertag",
+        "zh-Hans": "儿童节"
+       },
+       "days": [
+        "2025-09-20"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2025-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2026": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "world-children-s-day",
+       "festival": "childrens-day",
+       "kind": "public",
+       "name": {
+        "en": "World Children's Day",
+        "de": "Weltkindertag",
+        "zh-Hans": "儿童节"
+       },
+       "days": [
+        "2026-09-20"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2026-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2027": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "world-children-s-day",
+       "festival": "childrens-day",
+       "kind": "public",
+       "name": {
+        "en": "World Children's Day",
+        "de": "Weltkindertag",
+        "zh-Hans": "儿童节"
+       },
+       "days": [
+        "2027-09-20"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2027-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    },
+    "2028": {
+     "source": "baseline",
+     "source_ref": "python-holidays 0.104",
+     "holidays": [
+      {
+       "id": "world-children-s-day",
+       "festival": "childrens-day",
+       "kind": "public",
+       "name": {
+        "en": "World Children's Day",
+        "de": "Weltkindertag",
+        "zh-Hans": "儿童节"
+       },
+       "days": [
+        "2028-09-20"
+       ]
+      },
+      {
+       "id": "reformation-day",
+       "festival": "reformation-day",
+       "kind": "public",
+       "name": {
+        "en": "Reformation Day",
+        "de": "Reformationstag",
+        "zh-Hans": "宗教改革日"
+       },
+       "days": [
+        "2028-10-31"
+       ]
+      }
+     ],
+     "workdays": []
+    }
+   }
+  }
+ }
+}
