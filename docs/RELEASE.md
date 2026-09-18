@@ -65,20 +65,60 @@ git branch -M main
 ```bash
 gh repo create icyndate --public --source=. --remote=origin --push    # 装了 gh CLI
 # 或者：网页上建空仓库，然后
-git remote add origin https://github.com/<你的用户名>/icyndate.git
+git remote add origin https://github.com/icyn12-tinker/icyndate.git   # 已存在则用 git remote set-url
 git push -u origin main
 ```
+
+### 2.1 认证（第一次 push 必踩）
+
+GitHub 自 2021-08 起**不支持密码推送**，HTTPS 的 Password 框里输 GitHub 密码或邮箱一律被拒
+（`remote: Invalid username or token. Password authentication is not supported for Git operations.`）。
+二选一：
+
+**Personal Access Token**（不用装东西，token 当密码用）
+
+1. GitHub → Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate new token
+   - Repository access: Only select repositories → `icyndate`
+   - Permissions → Repository permissions，两条都要给：
+     - **Contents: Read and write** —— 推代码（Metadata: Read 自动带上）
+     - **Workflows: Read and write** —— 推 `.github/workflows/` 下的文件。
+       少了这条，push 会在传完对象之后才被拒：
+       `refusing to allow a Personal Access Token to create or update workflow ... without workflow scope`
+       （报错里说的 `workflow scope` 是经典 token 的叫法，fine-grained token 对应上面这条 Workflows 权限）
+   - 生成后立刻复制，页面关掉不再显示
+
+   已经建好的 token 可以直接编辑权限：点进 token → Permissions → 补上 → Update。
+   **token 字符串不变**，所以钥匙串里存的那份仍然有效，改完直接重推即可。
+2. `git config --global credential.helper osxkeychain`（存进钥匙串，只问一次）
+3. `git push -u origin main` → Username 填 **GitHub 用户名**（`icyn12-tinker`，不是邮箱），Password 粘 **token**
+
+**SSH**（无过期，长期更省事）
+
+```bash
+ssh-keygen -t ed25519 -C "icyn12@gmail.com"
+pbcopy < ~/.ssh/id_ed25519.pub     # GitHub → Settings → SSH and GPG keys → New SSH key
+git remote set-url origin git@github.com:icyn12-tinker/icyndate.git
+ssh -T git@github.com              # "Hi icyn12-tinker!" = 通了
+```
+
+SSH 密钥没有 scope 的概念，推 workflow 文件不受限，也不会 90 天过期——如果长期维护这个仓库，
+SSH 比轮换 token 省事。
+
+token 不要提交进仓库、不要贴到任何对话里——它等于该仓库的写权限。
+`git remote add` 报 `remote origin already exists` 时用 `git remote set-url origin <新地址>` 改，不要重复 add。
+
+### 2.2 CI
 
 推上去之后 `.github/workflows/ci.yml` 会自动跑一遍（build → tsc → 514 条测试 → CN 对拍）。
 **先确认 CI 是绿的再发布**——本地过了但 CI 红过一次（Node 版本差异之类），发出去就来不及了。
 
-### 2.1 补 repository 字段
+### 2.3 补 repository 字段
 
 仓库地址有了之后补上，npm 页面右侧的 Repository / Homepage / Issues 链接靠它们：
 
 ```bash
 node -e '
-const fs=require("fs"), URL="https://github.com/<你的用户名>/icyndate";
+const fs=require("fs"), URL="https://github.com/icyn12-tinker/icyndate";
 for (const [p,dir] of [["packages/core","packages/core"],["packages/mcp","packages/mcp"]]) {
   const f=p+"/package.json", d=JSON.parse(fs.readFileSync(f,"utf8"));
   d.repository={type:"git",url:"git+"+URL+".git",directory:dir};
