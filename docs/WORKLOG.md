@@ -76,6 +76,43 @@
   两个包的 `author` 定为 `Icyn <icyn12@gmail.com>`（该邮箱会公开在 npm 包页面上），
   并加了 `publishConfig: { access: "public" }`——scoped 包默认 private，这样忘敲 `--access public` 也不会发错。
 
+### 真实客户端验证后的修复（2026-09-18，date-mcp 0.1.1）
+
+接进 Claude Desktop 实测，发现**模型不复述来源**——查原始返回后确认问题不在模型，在工具输出：
+
+- `next_lunar_date` / `lunar` / `solar_terms` 的返回里**完全没有来源信息**。根因是建模缺口：
+  source 只定义在节假日层，农历/节气/干支没有——而它们恰恰是可信度最高的部分（73,384 天双参考对拍），
+  这份底气一个字都没传达出去。新增 `computed` 一档来表述它。
+- `holidays` 的 JSON 每行都有 source，但首句"13 holiday days in CN 2027"只字未提。
+  模型最可能复述的就是首句，改为汇总该次查询的来源档位。
+- 没有任何地方"要求"模型说出来。MCP 的 server-level `instructions` 原先是空的，现在写明四档来源的
+  含义与复述要求，并明确禁止用自身记忆填补 available:false 的空档。
+
+实测各工具首句（tsc 临时构建 + stdio 调用验证）：
+CN 2026 → `[source: official — from the government notice]`；
+CN 2027 → `[source: predicted — no official notice for this year yet; statutory days only, 调休 unknown]`；
+JP 2026 → `[source: baseline — ... not yet verified against the government gazette]`；
+农历/节气 → `[source: computed (... verified 1900–2100 against two independent references)]`。
+
+只改 MCP 层，`@icyn/date` 的 API 与类型不变，0.1.0 不受影响；发 `@icyn/date-mcp` 0.1.1。
+
+### 0.1.2：把 source_ref 透到首句
+
+0.1.1 之后再测：幻觉没了（"按惯例 8 到 9 天"消失），predicted 状态也用自然语言传达了
+（"放假调休安排还没公布"），但模型仍然不署名。原因是首句里只有档位（`source: official`）——
+档位不是用户能去核对的东西，具体公告文号才是。
+
+- 首句改为「档位 + 出处」：`[source: official — 国务院办公厅关于2026年部分节假日安排的通知（2025-11-04）]`；
+  predicted → `《全国年节及纪念日放假办法》法定假日推算；调休安排未公布`；baseline → `python-holidays 0.104`。
+- 跨年区间查询会同时列出两档并标 `(mixed — see each row)`，实测
+  `CN 2026-09-01..2027-01-05` → official + predicted 两条都在。
+- `date_context` / `is_workday` / `workdays` / `next_long_weekend` / `holiday_eve` 统一挂上出处。
+- instructions 新增两条：**引用具体公告而不是"official"这个词**；**不要把两档来源混进一句话**
+  （未来年份的节日日期是 computed 确定的，那年放不放假是 predicted 未知的——截图里模型已经在
+  这条边缘上试探了）。
+
+只改 MCP 层；`@icyn/date` 仍是 0.1.0，不需重发。
+
 ### 下一步（按 90 天计划）
 1. **发布**：按 docs/RELEASE.md 走。这是本周五的事，不再加功能。
 2. 把 baseline 逐个升级为 official：TW 補班、KR 代替公休日、HK 宪报优先。CN 2027 通知发布后（通常 11 月）第一时间录入。

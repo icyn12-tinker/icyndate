@@ -12,12 +12,38 @@
 ### 1.1 注册 / 登录
 
 ```bash
-npm whoami            # 有输出 = 已登录，跳到 1.2
-npm login             # 浏览器里完成，个人账号即可
+npm whoami            # 有输出 = 命令行已登录，跳到 1.2
+npm login             # 打印一个 URL 并打开浏览器，在浏览器里用 passkey 完成
 ```
 
-**务必开 2FA**（npmjs.com → Account → Two-Factor Authentication，选 `Authorization and Publishing`）。
-包一旦有人用，账号被盗等于供应链事故。开了 2FA 之后 publish 需要一次性验证码，见 4.2。
+**在 npmjs.com 网站上登录 ≠ 命令行已登录。** 这两套凭据是分开的：网站登录只作用于浏览器，
+`npm publish` 读的是 `~/.npmrc` 里的 token。只在网站登录过就发布，会在打包完成后的最后一步报：
+
+```
+npm error code ENEEDAUTH
+npm error need auth This command requires you to be logged in to https://registry.npmjs.org/
+```
+
+这时什么都没发出去，`npm login` 之后重发即可。发布前用 `npm whoami` 确认一眼最省事。
+另外该账号必须在 `icyn` 组织里有发布权限（组织页 → Members，owner 或 developer），
+否则报的是 403 而不是 ENEEDAUTH。
+
+**务必开 2FA**（npmjs.com → 头像 → Account → Two-Factor Authentication → Enable 2FA）。
+包一旦有人用，账号被盗等于供应链事故。
+
+注意 npm 的 2FA **已经不是验证器 App 的 6 位码了**，现在只支持 passkey / 安全密钥（WebAuthn）：
+Mac 的 Touch ID、Windows Hello、iPhone 的 Face ID，或者 YubiKey 这类实体密钥。
+所以老教程里的 `npm publish --otp=123456` 已经不适用。
+
+**在你日常发布的那台机器上注册一个 passkey**，否则每次 publish 浏览器都会弹一个
+"Scan QR Code"——那是浏览器发现本机没有 npmjs.com 的 passkey，退而求其次让你用另一台设备扫码。
+在 Mac 上注册 Touch ID 之后，publish 就变成按一下指纹：
+
+> Account → Two-Factor Authentication → 添加 security key → 起个名字（如 `MacBook Touch ID`）
+> → 按浏览器提示用 Touch ID 完成 → **把恢复码存好**（passkey 丢了只能靠它）
+
+手机上的 passkey 也能用：用 iPhone 相机扫那个二维码、Face ID 确认即可，
+但走的是蓝牙，手机要在旁边且蓝牙开着——每次发布都这么来一遍并不划算。
 
 ### 1.2 scope：`@icyn` ✅
 
@@ -164,8 +190,8 @@ npm pack --dry-run -w @icyn/date-mcp  # 5 个文件，约 5 kB
 ```bash
 # 1) 核心库
 npm publish -w @icyn/date --access public
-#    scoped 包默认是 private，--access public 不能省
-#    开了 2FA 会提示输入一次性验证码；也可以 --otp=123456
+#    scoped 包默认 private；两个 package.json 里已有 publishConfig.access=public，这个参数是双保险
+#    2FA 会让浏览器弹出 passkey 验证（Touch ID / Face ID）——见 1.1，不是 6 位验证码
 #    prepublishOnly 会自动重新 build 一次
 
 # 2) 确认 core 真的上去了，再发 mcp
@@ -175,7 +201,19 @@ npm view @icyn/date version
 npm publish -w @icyn/date-mcp --access public
 ```
 
-### 4.3 打 tag
+### 4.3 以后改用 Trusted Publishing（OIDC，无 token）
+
+npm 正在收紧"绕过 2FA 的 token"：**2026-08** 起这类 token 不能做账号相关操作，
+**2027-01** 起不能直接发布。也就是说，靠 token 在 CI 里发包这条路快走到头了。
+
+替代方案是 **trusted publishing**——GitHub Actions 通过 OIDC 直接向 npm 证明身份，仓库里不存任何 token，
+并且自动带上 provenance（npm 页面会显示"这个包由哪个仓库的哪次 commit 构建"）。
+
+顺序上要先有包才能配：**0.1.0 先按 4.2 手动发出去**，然后
+npm 包页面 → Settings → Trusted publisher → 填 GitHub 仓库 `icyn12-tinker/icyndate` 与 workflow 文件名，
+再加一个 release workflow（`permissions: id-token: write` + `npm publish`）。下一次发版就不用碰 passkey 了。
+
+### 4.4 打 tag
 
 ```bash
 git tag -a v0.1.0 -m "0.1.0"
@@ -210,18 +248,46 @@ MCP server：
 npx -y @icyn/date-mcp    # 应该静默挂住（stdio 在等输入），Ctrl-C 退出即为正常
 ```
 
-接到 MCP 客户端里真调一次。Claude Desktop 的配置：
+接到 MCP 客户端里真调一次。以 Claude Desktop（macOS）为例：
 
-```json
-{
-  "mcpServers": {
-    "icyn-date": { "command": "npx", "args": ["-y", "@icyn/date-mcp"] }
-  }
-}
+**1) 打开配置** —— 设置（`Cmd+,`）→ 开发者 → 编辑配置，对应文件是
+`~/Library/Application Support/Claude/claude_desktop_config.json`
+
+**2) 加一个键，不要整份覆盖** —— 文件里通常已经有别的 MCP server。安全合并（自动备份）：
+
+```bash
+CFG=~/Library/Application\ Support/Claude/claude_desktop_config.json
+cp "$CFG" "$CFG.bak" 2>/dev/null
+python3 -c '
+import json, os
+p = os.path.expanduser("~/Library/Application Support/Claude/claude_desktop_config.json")
+d = json.load(open(p)) if os.path.exists(p) and os.path.getsize(p) else {}
+d.setdefault("mcpServers", {})["icyn-date"] = {"command": "npx", "args": ["-y", "@icyn/date-mcp"]}
+json.dump(d, open(p, "w"), indent=2, ensure_ascii=False)
+print("现有 server：", list(d["mcpServers"]))
+'
 ```
 
-重启客户端，问一句"2026 年国庆放几天、10 月 10 日要不要上班"，确认它调的是 `is_workday` / `holidays`
-并且答案带 source。
+**3) `Cmd+Q` 完全退出再启动** —— 关窗口进程还在，配置不会重新加载。"改了没反应"基本都是这个。
+
+**4) 验证** —— 设置 → 开发者里 `icyn-date` 显示 running，工具列表里有 11 个工具。然后问：
+
+| 问题 | 期望走的工具 | 重点看 |
+|---|---|---|
+| 2026 年国庆放几天？10 月 10 日要不要上班？ | `holidays` / `is_workday` | 答案带 `source: official` |
+| 2027 年春节是哪天？ | `lunar` / `holidays` | 标出 `predicted`（调休未公布） |
+| 下一个中秋是哪天 | `next_lunar_date` | —— |
+| 日本 2026 年有哪些假期 | `holidays` | `source: baseline` |
+
+**关键是看模型有没有把 source / confidence 说出来。** 那是这个包的卖点；拿到了却不说，
+说明 `describe()` 的措辞要调——这种问题只有真实调用才暴露得出来。
+
+**起不来** —— 九成是 PATH：客户端用极简环境启动子进程，node 来自 nvm / Homebrew 时找不到 `npx`，
+日志里是 `spawn npx ENOENT`。用 `which npx` 拿绝对路径填进 `command` 即可。
+日志：`tail -f ~/Library/Logs/Claude/mcp-server-icyn-date.log`
+
+`npx -y` 每次启动可能重新拉包，慢。稳定之后可以 `npm i -g @icyn/date-mcp`，
+把 `which icyn-date-mcp` 的绝对路径填进 `command`，`args` 留 `[]`。
 
 最后看一眼两个 npm 页面：README 渲染正常、LICENSE 显示 MIT、作者 Icyn。
 
@@ -293,7 +359,7 @@ git commit -am "release 0.1.1" && git tag v0.1.1 && git push --follow-tags
 
 ## 附：发布前最后一眼
 
-- [ ] `npm whoami` 有输出，2FA 已开
+- [ ] `npm whoami` 有输出（命令行登录，不是网站登录），2FA 已开，本机已注册 passkey
 - [x] `@icyn` scope 到手（组织已建：npmjs.com/org/icyn），账号在组织里有发布权限
 - [ ] `git init` 后设 `git config user.email "icyn12@gmail.com"`
 - [ ] GitHub 仓库已推，CI 绿
