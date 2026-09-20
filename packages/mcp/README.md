@@ -1,3 +1,4 @@
+<!-- mcp-name: io.github.icyn12-tinker/icyn-date -->
 # @icyn/date-mcp
 
 MCP server that gives AI agents date context — Chinese lunar calendar, 24 solar terms, holidays and workdays for

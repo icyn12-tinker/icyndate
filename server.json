@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.icyn12-tinker/icyn-date",
+  "title": "Icyn Date",
+  "description": "Date context for agents: Chinese lunar calendar, solar terms, holidays for 12 regions. Offline.",
+  "version": "0.1.4",
+  "websiteUrl": "https://github.com/icyn12-tinker/icyndate",
+  "repository": {
+    "url": "https://github.com/icyn12-tinker/icyndate",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@icyn/date-mcp",
+      "version": "0.1.4",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}

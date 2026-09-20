@@ -2,8 +2,9 @@
 
 从"代码在本地"到"别人能 `npm i @icyn/date`"的全过程。第一次发布走第 1–6 节；之后每次发版只看第 7 节。
 
-**当前状态**（2026-09-18）：代码、测试（514 条）、CI、LICENSE、两个包的 README 都齐了。
-缺的只有账号和仓库这类外部动作——下面每一步都标了是你手动做还是命令能做。
+**当前状态**（2026-09-20）：已上线。`@icyn/date` 0.1.0 与 `@icyn/date-mcp` 0.1.4 在 npm，
+`io.github.icyn12-tinker/icyn-date` 在官方 MCP Registry。首次发布的全过程记录在下面各节，
+日常发版看第 7 节即可。
 
 ---
 
@@ -280,7 +281,16 @@ print("现有 server：", list(d["mcpServers"]))
 | 日本 2026 年有哪些假期 | `holidays` | `source: baseline` |
 
 **关键是看模型有没有把 source / confidence 说出来。** 那是这个包的卖点；拿到了却不说，
-说明 `describe()` 的措辞要调——这种问题只有真实调用才暴露得出来。
+说明工具输出的措辞要调——这种问题只有真实调用才暴露得出来。
+
+> **每次都新开对话（`Cmd+N`）。** 同一个对话里重复问同一个问题，模型会进入"简略重复"模式
+> （"这个问题前面问过两次了，答案不变"），把它认为已经交代过的东西——包括来源——全省掉。
+> 这时看到的现象与服务器返回无关，改代码是在追噪音。踩过一次，浪费了一轮发布。
+>
+> 改完代码的完整回路是：`npm publish` → `npm view @icyn/date-mcp version` 确认版本 →
+> `Cmd+Q` 完全退出客户端（`npx -y` 会用缓存）→ 重开 → **新对话**里问 → 一个问题一个对话。
+>
+> 拿不准模型看到的是不是新版本时，直接调工具看原始返回，别从聊天回复反推。
 
 **起不来** —— 九成是 PATH：客户端用极简环境启动子进程，node 来自 nvm / Homebrew 时找不到 `npx`，
 日志里是 `spawn npx ENOENT`。用 `which npx` 拿绝对路径填进 `command` 即可。
@@ -292,6 +302,36 @@ print("现有 server：", list(d["mcpServers"]))
 最后看一眼两个 npm 页面：README 渲染正常、LICENSE 显示 MIT、作者 Icyn。
 
 ---
+
+## 5.5 官方 MCP Registry
+
+首次已发布（`io.github.icyn12-tinker/icyn-date` 0.1.4，status active），以后由 tag 触发的
+workflow 自动同步。手动发布或排错：
+
+```bash
+brew install mcp-publisher
+mcp-publisher login github     # device code 流程：终端给一个码，去 github.com/login/device 输入
+mcp-publisher publish          # 读仓库根目录的 server.json
+curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=icyn-date"
+```
+
+要点：
+
+- 归属校验看的是 **npm 上线上的包**里的 `mcpName`——本地改了不算，必须先 `npm publish`。
+- `server.json` 的 `name` 必须与 `mcpName` 完全一致；`description` 上限 100 字符。
+- CLI **没有 `validate` 子命令**（只有 init / login / logout / publish）。要先校验用
+  `uvx check-jsonschema --schemafile "$(jq -r '."$schema"' server.json)" server.json`。
+- GitHub 认证时命名空间必须是 `io.github.<GitHub 用户名>/`——是 GitHub 用户名 `icyn12-tinker`，
+  不是 npm 用户名 `icyn12`。两者不同不影响。
+- **Registry 处于 preview**，官方声明可能有破坏性变更或数据重置。别把它当唯一分发入口，
+  npm 那条路才是稳的；真被重置了重新 publish 一次即可。
+- 发布失败不消耗版本号，重试前不要 `npm version patch`。
+
+| 报错 | 原因 |
+|---|---|
+| `Registry validation failed for package` | 线上 npm 包里没有 `mcpName`，或与 `server.json` 的 `name` 不一致 |
+| `You do not have permission to publish this server` | 登录的 GitHub 账号与命名空间前缀不匹配 |
+| `Invalid or expired Registry JWT token` | 重新 `mcp-publisher login github` |
 
 ## 6. 出错了怎么办
 
@@ -329,9 +369,16 @@ npm version patch -w @icyn/date-mcp
 npm publish -w @icyn/date --access public
 npm publish -w @icyn/date-mcp --access public
 
-# 6. tag + push
+# 6. tag + push —— tag 会触发 .github/workflows/publish-mcp-registry.yml，
+#    用 OIDC 自动把新版本同步到官方 MCP Registry（不需要存任何 token）
 git commit -am "release 0.1.1" && git tag v0.1.1 && git push --follow-tags
+
+# 7. 一两分钟后验证 Registry
+curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=icyn-date"
 ```
+
+`server.json` 的 `version` 与 `packages[0].version` 必须等于 npm 上的版本。
+workflow 会按 tag 名自动改写这两处；手动发布时要自己同步。
 
 录进新一年的官方节假日之后，记得同步改 `packages/core/src/data/holidays/CN.json` 的 `verified_until`
 ——预测下限跟着它走，不改的话新录的那年会被当成"已录数据"但预测仍从旧年份开始。
@@ -360,10 +407,12 @@ git commit -am "release 0.1.1" && git tag v0.1.1 && git push --follow-tags
 ## 附：发布前最后一眼
 
 - [ ] `npm whoami` 有输出（命令行登录，不是网站登录），2FA 已开，本机已注册 passkey
+      —— 登录态会掉；掉了的表现是 publish 在打包完成后报 `404 Not Found - PUT`（npm 把 403 伪装成 404）
 - [x] `@icyn` scope 到手（组织已建：npmjs.com/org/icyn），账号在组织里有发布权限
-- [ ] `git init` 后设 `git config user.email "icyn12@gmail.com"`
-- [ ] GitHub 仓库已推，CI 绿
+- [x] `git init` 后设 `git config user.email "icyn12@gmail.com"`
+- [x] GitHub 仓库已推，CI 绿
 - [ ] `npm run check` 全绿，且打印 `1096 days checked`
 - [ ] `npm pack --dry-run` 两个包内容都对，没有 src/ test/ fixtures/
 - [ ] **core 先，mcp 后**
-- [ ] 空目录里装回来跑通，MCP 在真客户端里调通
+- [ ] 空目录里装回来跑通，MCP 在真客户端里调通（**新对话**里测，见 §5）
+- [ ] 发 MCP server 时：`mcpName` 与 `server.json` 的 `name` 一致、版本号三处同步（见 §5.5）

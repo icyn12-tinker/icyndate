@@ -113,6 +113,19 @@ JP 2026 → `[source: baseline — ... not yet verified against the government g
 
 只改 MCP 层；`@icyn/date` 仍是 0.1.0，不需重发。
 
+### 0.1.4 与官方 MCP Registry 上线（2026-09-20）
+
+- `@icyn/date-mcp` 0.1.4 发到 npm。0.1.3 没被占用——**发布失败不消耗版本号**，当时误以为重试前要
+  再 `npm version patch`，白跳了一个号。
+- 发布报 404 的排查：对**已存在**的包 PUT 返回 `404 Not Found` 是 npm 把 403（无写权限）伪装成 404，
+  真实原因是 CLI 登录态掉了（`npm whoami` 一查即知），重新 `npm login` 后即通。写进 RELEASE.md 了。
+- 接入官方 MCP Registry：`packages/mcp/package.json` 加 `mcpName: io.github.icyn12-tinker/icyn-date`
+  （归属校验看的是**线上**包里的这个字段），根目录加 `server.json`，
+  `.github/workflows/publish-mcp-registry.yml` 用 OIDC 在 push tag 时自动同步。
+- `mcp-publisher publish` 成功，`io.github.icyn12-tinker/icyn-date` 0.1.4 status active。
+- 命名空间用 **GitHub 用户名** `icyn12-tinker`，与 npm 用户名 `icyn12` 不同，互不影响。
+- Registry 官方声明处于 preview、可能数据重置，因此 npm 始终是主分发路径。
+
 ### 下一步（按 90 天计划）
 1. **发布**：按 docs/RELEASE.md 走。这是本周五的事，不再加功能。
 2. 把 baseline 逐个升级为 official：TW 補班、KR 代替公休日、HK 宪报优先。CN 2027 通知发布后（通常 11 月）第一时间录入。

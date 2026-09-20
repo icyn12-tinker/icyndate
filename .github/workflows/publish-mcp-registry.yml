@@ -1,0 +1,64 @@
+# .github/workflows/publish-mcp-registry.yml
+# Publishes to the official MCP Registry whenever you push a v* tag.
+# Uses GitHub OIDC, so there is no token to store — the io.github.icyn12-tinker
+# namespace is authorised automatically because the workflow runs in your repo.
+name: publish-mcp-registry
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to publish (no leading v)"
+        required: true
+
+permissions:
+  contents: read
+  id-token: write        # required for OIDC auth to the registry
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Work out the version
+        id: v
+        run: echo "version=${{ github.event.inputs.version || github.ref_name }}" | sed 's/=v/=/' >> "$GITHUB_OUTPUT"
+
+      - name: Sync version fields in server.json
+        run: |
+          V="${{ steps.v.outputs.version }}"
+          jq --arg v "$V" '.version = $v | .packages[0].version = $v' server.json > server.tmp
+          mv server.tmp server.json
+          cat server.json
+
+      - name: Wait for the npm package to be available
+        run: |
+          V="${{ steps.v.outputs.version }}"
+          for i in $(seq 1 30); do
+            if npm view "@icyn/date-mcp@$V" version >/dev/null 2>&1; then echo "found on npm"; exit 0; fi
+            echo "attempt $i: not on npm yet, sleeping"; sleep 20
+          done
+          echo "::error::@icyn/date-mcp@$V never appeared on npm"; exit 1
+
+      - name: Install mcp-publisher
+        run: |
+          OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+          ARCH=$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/')
+          LATEST=$(curl -sSL https://api.github.com/repos/modelcontextprotocol/registry/releases/latest | jq -r .tag_name | sed 's/^v//')
+          curl -sSL "https://github.com/modelcontextprotocol/registry/releases/download/v${LATEST}/mcp-publisher_${LATEST}_${OS}_${ARCH}.tar.gz" | tar xz mcp-publisher
+          sudo mv mcp-publisher /usr/local/bin/
+          mcp-publisher --version
+
+      - name: Validate server.json against the schema
+        run: |
+          pipx install check-jsonschema
+          check-jsonschema --schemafile "$(jq -r '."$schema"' server.json)" server.json
+
+      - name: Log in with GitHub OIDC
+        run: mcp-publisher login github-oidc
+
+      - name: Publish
+        run: mcp-publisher publish
