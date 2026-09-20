@@ -57,8 +57,25 @@ jobs:
           pipx install check-jsonschema
           check-jsonschema --schemafile "$(jq -r '."$schema"' server.json)" server.json
 
+      # Idempotent: re-tagging or re-running a tag must not produce a false red build.
+      - name: Skip if this version is already in the registry
+        id: already
+        run: |
+          V="${{ steps.v.outputs.version }}"
+          CUR=$(curl -sS "https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.icyn12-tinker/icyn-date" \
+                | jq -r '.servers[]?.server | select(.name=="io.github.icyn12-tinker/icyn-date") | .version' | head -1)
+          echo "registry has: ${CUR:-none}, publishing: $V"
+          if [ "$CUR" = "$V" ]; then
+            echo "::notice::$V is already published to the MCP Registry — nothing to do"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Log in with GitHub OIDC
+        if: steps.already.outputs.skip != 'true'
         run: mcp-publisher login github-oidc
 
       - name: Publish
+        if: steps.already.outputs.skip != 'true'
         run: mcp-publisher publish
