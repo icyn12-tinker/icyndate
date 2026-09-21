@@ -181,7 +181,9 @@ try {
 console.log("\n✓ 完成");
 for (const p of Object.values(plan)) console.log(`  ${p.name}@${p.to}  https://www.npmjs.com/package/${p.name}`);
 if (plan.mcp) {
-  console.log("  MCP Registry 由 tag 触发的 workflow 同步，一两分钟后验证：");
-  console.log('    curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=icyn-date"');
+  console.log("  MCP Registry 由 tag 触发的 workflow 同步——npm 成功不代表 Registry 成功，两分钟后两处都确认：");
+  console.log("    https://github.com/icyn12-tinker/icyndate/actions/workflows/publish-mcp-registry.yml  （要绿）");
+  console.log('    curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=icyn-date"      （version 要是 ' + plan.mcp.to + '）');
+  console.log(`  若 workflow 失败：修好后在 Actions 页对它点 Run workflow，填 ${plan.mcp.to}，不用重发 npm`);
 }
 console.log(`  最后去 GitHub 把 ${tag} 转成 Release：https://github.com/icyn12-tinker/icyndate/releases/new?tag=${tag}\n`);

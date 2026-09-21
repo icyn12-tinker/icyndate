@@ -126,6 +126,17 @@ JP 2026 → `[source: baseline — ... not yet verified against the government g
 - 命名空间用 **GitHub 用户名** `icyn12-tinker`，与 npm 用户名 `icyn12` 不同，互不影响。
 - Registry 官方声明处于 preview、可能数据重置，因此 npm 始终是主分发路径。
 
+### 0.1.5：一键发版脚本首次实跑（2026-09-21）
+
+- `npm run release -- mcp patch` 首跑：门禁因 `.venv` 未激活拦下（正确行为，什么都没发）；改为
+  `scripts/py.mjs` 自动找 venv 里的 Python 后，第二次一路走通，`@icyn/date-mcp@0.1.5` 上 npm。
+- 但 tag 触发的 `publish-mcp-registry` **首次真跑就失败**：workflow 拼的下载名
+  `mcp-publisher_${VERSION}_linux_amd64.tar.gz` 不存在，官方资产名不带版本号
+  （`mcp-publisher_linux_amd64.tar.gz`）。改用 `releases/latest/download/...` 并给 curl 加 `-f`。
+  教训：这段 workflow 来自外部文档，接入时只核对了 server.json，没逐行审 workflow；
+  0.1.4 那次 Registry 是手动 `mcp-publisher publish` 发的，所以 workflow 的安装步骤从未被执行过。
+- 发版脚本的结束提示改为明确要求去 Actions 页确认 Registry workflow 是绿的——npm 成功 ≠ Registry 成功。
+
 ### 下一步（按 90 天计划）
 1. **发布**：按 docs/RELEASE.md 走。这是本周五的事，不再加功能。
 2. 把 baseline 逐个升级为 official：TW 補班、KR 代替公休日、HK 宪报优先。CN 2027 通知发布后（通常 11 月）第一时间录入。
