@@ -3,7 +3,7 @@
   "name": "io.github.icyn12-tinker/icyn-date",
   "title": "Icyn Date",
   "description": "Date context for agents: Chinese lunar calendar, solar terms, holidays for 12 regions. Offline.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "websiteUrl": "https://github.com/icyn12-tinker/icyndate",
   "repository": {
     "url": "https://github.com/icyn12-tinker/icyndate",
@@ -13,8 +13,10 @@
     {
       "registryType": "npm",
       "identifier": "@icyn/date-mcp",
-      "version": "0.1.4",
-      "transport": { "type": "stdio" }
+      "version": "0.1.5",
+      "transport": {
+        "type": "stdio"
+      }
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "@icyn/date-mcp",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "mcpName": "io.github.icyn12-tinker/icyn-date",
   "description": "MCP server giving AI agents date context: lunar calendar, solar terms, holidays and workdays for 12 regions. Offline, no API key.",
   "license": "MIT",
