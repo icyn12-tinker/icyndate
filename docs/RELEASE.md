@@ -292,9 +292,18 @@ print("现有 server：", list(d["mcpServers"]))
 >
 > 拿不准模型看到的是不是新版本时，直接调工具看原始返回，别从聊天回复反推。
 
-**起不来** —— 九成是 PATH：客户端用极简环境启动子进程，node 来自 nvm / Homebrew 时找不到 `npx`，
-日志里是 `spawn npx ENOENT`。用 `which npx` 拿绝对路径填进 `command` 即可。
-日志：`tail -f ~/Library/Logs/Claude/mcp-server-icyn-date.log`
+**起不来** —— 日志里是 `spawn npx ENOENT`（Windows 还会先打一行 cmd 的
+`'npx' is not recognized as an internal or external command`）。看报错上方日志打印的那串 PATH：
+
+- **PATH 里根本没有 Node 的目录**（没有 `nodejs`、没有 `npm`）→ 这台机器没装 Node。装 LTS 版，
+  完全退出客户端再开。2026-09-21 在一台 Windows 上遇到过，PATH 里有 Python/Java/Git/Maven/Docker，唯独没 Node。
+- **装了 Node 但不在那串 PATH 里**（nvm / nvm-windows / Volta / Scoop / Homebrew）→ 客户端用精简环境启动子进程。
+  `which npx` / `where.exe npx` 拿绝对路径填进 `command`；Windows 上文件名是 **`npx.cmd`**，JSON 里反斜杠要写两个。
+
+日志位置：macOS `~/Library/Logs/Claude/`；Windows 官网安装包 `%APPDATA%\Claude\logs\`；
+**Windows 应用商店版（MSIX）** `%LOCALAPPDATA%\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\logs\`
+——商店版把 AppData 虚拟化了，配置和日志都不在常规路径，往常规路径放文件它看不到。
+改配置一律走 **设置 → 开发者 → 编辑配置**，别按路径找。完整说明在 `packages/mcp/README.md` 的 Troubleshooting。
 
 `npx -y` 每次启动可能重新拉包，慢。稳定之后可以 `npm i -g @icyn/date-mcp`，
 把 `which icyn-date-mcp` 的绝对路径填进 `command`，`args` 留 `[]`。
@@ -347,6 +356,30 @@ curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=icyn-date"
 ---
 
 ## 7. 之后每次发版
+
+**一条命令**（`scripts/release.mjs`，Mac / Windows 都能跑）：
+
+```bash
+npm run release -- mcp patch --dry-run   # 先看计划，什么都不改
+npm run release -- mcp patch             # 最常见：只发 MCP server
+npm run release -- core patch            # 只发库（core 单独发只允许 patch）
+npm run release -- both minor            # 两个一起发；core 升 minor/major 必须用 both
+```
+
+它按顺序做：前置检查（在 main 上、工作区干净、不落后远端、`npm whoami` 已登录）→ 列出计划并确认 →
+`npm run check` → 改版本号（含 `server.json`，both 时连 mcp 对 core 的依赖范围）→ 先 core 后 mcp 发布
+（等 core 在 npm 上可见）→ commit + tag + push → tag 触发 Registry 同步。
+
+**发布失败了，修好原因后直接重跑同一条命令。** 脚本发现本地版本还没上 npm，就会沿用它，不再递增——
+发布失败不消耗版本号，手动流程里在这一步白扔过一个 0.1.3。
+
+tag 规则：发了 mcp 就打 `v<mcp 版本>`（workflow 用它作为 Registry 的版本号）；只发 core 打
+`core-v<版本>`，不以 `v` 开头，不会触发 Registry。
+
+Windows 上注意：`npm run check` 最后一步调用 `python3`，Windows 通常只有 `python`/`py`，
+`python3` 可能是会弹出应用商店的占位程序。发版建议在 Mac 上做。
+
+### 手动流程（脚本不可用时）
 
 ```bash
 # 1. 改代码，更新数据

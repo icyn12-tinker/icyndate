@@ -8,7 +8,8 @@
     "test": "vitest run",
     "build": "npm run build -w @icyn/date && npm run build -w @icyn/date-mcp",
     "fixtures": "python3 tools/gen_fixtures.py && python3 tools/gen_solar_terms.py && python3 tools/gen_holidays_baseline.py",
-    "check": "npm run build && npx tsc -p . && npm test && python3 tools/check_cn_holidays.py"
+    "check": "npm run build && npx tsc -p . && npm test && python3 tools/check_cn_holidays.py",
+    "release": "node scripts/release.mjs"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
