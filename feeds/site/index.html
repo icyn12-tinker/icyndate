@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>A股休市日历</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+html{color-scheme:light}body{margin:0}
+/* Layout: single column "exchange notice" — countdown slip on top, feeds, then the verified closure ledger */
+:root{
+  --bg:#f5f6f8; --paper:#ffffff; --ink:#15202e; --muted:#5b6778; --rule:#dde2ea;
+  --seal:#b3261e; --seal-soft:#fbe9e7; --ok:#1f7a4d;
+  --display:"Noto Serif SC","Songti SC",serif;
+  --body:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f141b; --paper:#171e28; --ink:#e7ebf1; --muted:#9aa6b6; --rule:#2a3442;
+  --seal:#ef6a5e; --seal-soft:#3a1d1b; --ok:#5cc28f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f141b; --paper:#171e28; --ink:#e7ebf1; --muted:#9aa6b6; --rule:#2a3442;
+  --seal:#ef6a5e; --seal-soft:#3a1d1b; --ok:#5cc28f; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:15px/1.7 var(--body)}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:40px 64px;display:flex;flex-direction:column;gap:40px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.25}
+h1{font-size:clamp(28px,6vw,40px);font-weight:900}
+h2{font-size:22px;font-weight:600}
+p{margin:0;max-width:62ch}
+.eyebrow{font-size:12px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.lede{color:var(--muted)}
+.slip{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:24px;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}
+.stamp{width:88px;height:88px;border:3px solid var(--seal);border-radius:50%;color:var(--seal);display:grid;place-items:center;text-align:center;font-family:var(--display);font-weight:900;line-height:1.1;transform:rotate(-8deg)}
+.stamp b{font-size:28px;display:block;font-family:var(--mono)}
+.stamp small{font-size:12px}
+.slip .when{font-family:var(--mono);font-size:18px;font-weight:600}
+.slip .sub{color:var(--muted);font-size:14px}
+.feeds{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.feed{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.feed h3{margin:0;font-size:17px}
+.feed .meta{font-size:13px;color:var(--muted)}
+.feed .tag{align-self:flex-start;font-size:12px;padding:1px 8px;border-radius:99px;background:var(--seal-soft);color:var(--seal)}
+.x{font:500 14px var(--body);padding:8px 14px;border-radius:6px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;align-self:flex-start}
+.x:focus-visible{outline:2px solid var(--seal);outline-offset:2px}
+.status{font-size:13px;color:var(--muted);min-height:1.4em}
+.tablebox{overflow-x:auto;background:var(--paper);border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--rule);white-space:nowrap}
+th{font-size:12px;color:var(--muted);font-weight:500;letter-spacing:.06em}
+td.d{font-family:var(--mono);font-variant-numeric:tabular-nums}
+tr.past td{color:var(--muted)}
+tr:last-child td{border-bottom:0}
+.check{display:flex;gap:10px;align-items:baseline;color:var(--ok);font-weight:500}
+section{display:flex;flex-direction:column;gap:14px}
+.steps{margin:0;padding-left:1.3em;color:var(--muted)}
+.steps li{margin:4px 0}
+footer{font-size:13px;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px}
+footer a{color:inherit}
+@media (max-width:480px){.slip{grid-template-columns:1fr}}
+.sub-url{display:flex;flex-wrap:wrap;gap:8px;align-items:center;min-width:0}
+.sub-url code{font:12px var(--mono);background:var(--bg);border:1px solid var(--rule);border-radius:4px;padding:4px 6px;word-break:break-all;min-width:0;flex:1 1 200px}
+.copy{font:500 13px var(--body);padding:5px 10px;border-radius:6px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
+.copy:focus-visible{outline:2px solid var(--seal);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:12px">
+    <span class="eyebrow">icyndate · 订阅日历</span>
+    <h1>A 股哪天不开市，订阅一次就不用再查</h1>
+    <p class="lede">把沪深北交易所的节假日休市、国务院放假与调休放进你手机自带的日历。每一条都附交易所或国务院公告原文出处，公告一更新，订阅自动同步。</p>
+  </header>
+
+  <div class="slip" id="next">
+    <div class="stamp"><div><b id="days">—</b><small>天后休市</small></div></div>
+    <div>
+      <div class="sub">下一次 A 股休市</div>
+      <div class="when" id="when">正在读取…</div>
+      <div class="sub" id="reopen"></div>
+    </div>
+  </div>
+
+  <section>
+    <h2>两个订阅源</h2>
+    <div class="feeds">
+      <div class="feed">
+        <span class="tag">免费</span>
+        <h3>A 股休市日历</h3>
+        <p class="meta">沪深北交易所节假日休市，2025–2026 年，每条写明哪天照常开市。</p>
+        <div class="sub-url"><code id="u-cn-a">https://icyn12-tinker.github.io/icyndate/cn-a-share-closures.ics</code><button type="button" class="copy" data-t="u-cn-a">复制地址</button></div>
+      </div>
+      <div class="feed">
+        <span class="tag">免费</span>
+        <h3>中国节假日与调休</h3>
+        <p class="meta">法定假日与调休上班日，2025–2027 年。2027 年官方安排未公布，标注“预测”。</p>
+        <div class="sub-url"><code id="u-cn-h">https://icyn12-tinker.github.io/icyndate/cn-holidays.ics</code><button type="button" class="copy" data-t="u-cn-h">复制地址</button></div>
+      </div>
+    </div>
+    <ol class="steps">
+      <li>iPhone：“设置 › 日历 › 账户 › 添加账户 › 其他 › 添加已订阅的日历”，填入订阅地址。</li>
+      <li>Google 日历：电脑端“其他日历 › 通过网址添加”。</li>
+      <li>订阅后日历每天自动检查更新，交易所发布新公告后无需重新添加。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>2026 年休市安排</h2>
+    <div class="check">✓ <span>已与上海证券交易所公告逐天核对：2025 年休市 28 天，全年 243 个交易日；2026 年休市 33 天，242 个交易日。</span></div>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>节日</th><th>休市</th><th>照常开市</th></tr></thead>
+        <tbody id="rows"><tr><td colspan="3">正在读取…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>即将推出：多市场叠加</h2>
+    <p>同时做 A 股、港股通和美股，或者跨境收付款？多市场版会把 CN、HK、US 的休市日和半日市放进一张日历，并标出“港股通不可交易”这样的叠加日。</p>
+  </section>
+
+  <footer>数据来自开源库 icyndate（MIT）。出处：<a href="https://www.sse.com.cn/disclosure/dealinstruc/closed/" target="_blank" rel="noopener">上海证券交易所 · 休市安排</a>。本日历只同步官方公告，不覆盖台风等临时休市，也不构成投资建议。</footer>
+</div>
+
+<script>
+(function(){
+  const FILES={a:"cn-a-share-closures.ics",cn:"cn-holidays.ics"};
+  const cache={};
+  const today=new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Shanghai"}));
+  const todayStr=today.getFullYear()+"-"+String(today.getMonth()+1).padStart(2,"0")+"-"+String(today.getDate()).padStart(2,"0");
+  const fmt=(d)=>{const [y,m,dd]=d.split("-");return `${+m}月${+dd}日`};
+  const wk=(d)=>"日一二三四五六"[new Date(d+"T00:00:00Z").getUTCDay()];
+  const prev=(d)=>new Date(Date.parse(d+"T00:00:00Z")-864e5).toISOString().slice(0,10);
+  function parse(text){
+    const un=text.replace(/\r\n[ \t]/g,"");
+    return un.split("BEGIN:VEVENT").slice(1).map(b=>{
+      const g=(k)=>{const m=b.match(new RegExp("^"+k+"[^:]*:(.*)$","m"));return m?m[1].trim():""};
+      const iso=(s)=>s.slice(0,4)+"-"+s.slice(4,6)+"-"+s.slice(6,8);
+      const desc=g("DESCRIPTION").replace(/\\n/g,"\n").replace(/\\([,;\\])/g,"$1");
+      const re=desc.match(/(\d{4}-\d{2}-\d{2}) 起照常开市/);
+      return {start:iso(g("DTSTART")),end:prev(iso(g("DTEND"))),summary:g("SUMMARY").replace(/\\([,;\\])/g,"$1"),reopen:re?re[1]:null};
+    });
+  }
+  async function load(k){ if(!cache[k]){const r=await fetch(FILES[k]); if(!r.ok) throw new Error(r.status); cache[k]=await r.text();} return cache[k]; }
+
+  load("a").then(t=>{
+    const ev=parse(t);
+    const up=ev.find(e=>e.end>=todayStr);
+    if(up){
+      const days=Math.max(0,Math.round((Date.parse(up.start)-Date.parse(todayStr))/864e5));
+      document.getElementById("days").textContent=up.start<=todayStr?"今":days;
+      document.getElementById("when").textContent=`${fmt(up.start)}（周${wk(up.start)}）– ${fmt(up.end)}（周${wk(up.end)}） · ${up.summary.replace(/^.*：/,"")}`;
+      document.getElementById("reopen").textContent=up.reopen?`${fmt(up.reopen)}（周${wk(up.reopen)}）起照常开市`:"";
+      if(up.start<=todayStr) document.querySelector(".stamp small").textContent="正在休市";
+    }else{document.getElementById("when").textContent="已公布的休市都已过去，等待交易所发布下一年安排";}
+    document.getElementById("rows").innerHTML=ev.filter(e=>e.start.startsWith("2026")).map(e=>
+      `<tr class="${e.end<todayStr?"past":""}"><td>${e.summary.replace(/^.*：/,"")}</td><td class="d">${e.start.slice(5)} → ${e.end.slice(5)}</td><td class="d">${e.reopen?e.reopen.slice(5):""}</td></tr>`).join("");
+  }).catch(()=>{document.getElementById("when").textContent="休市数据没有读到，请刷新页面重试。";document.getElementById("rows").innerHTML='<tr><td colspan="3">休市数据没有读到，请刷新页面重试。</td></tr>';});
+
+  document.querySelectorAll(".copy").forEach(b=>b.addEventListener("click",async()=>{
+    const el=document.getElementById(b.dataset.t);
+    try{await navigator.clipboard.writeText(el.textContent);b.textContent="已复制";}
+    catch(e){const r=document.createRange();r.selectNodeContents(el);const sel=getSelection();sel.removeAllRanges();sel.addRange(r);b.textContent="已选中，请手动复制";}
+    setTimeout(()=>b.textContent="复制地址",2000);
+  }));
+})();
+</script>
+
+</body>
+</html>

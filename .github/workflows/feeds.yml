@@ -1,0 +1,43 @@
+name: feeds
+# 生成 .ics 订阅源并发布到 GitHub Pages。
+# gen-ics.mjs 会先与交易所公告逐天对拍，有任何差异就失败，不会发布错误数据。
+on:
+  push:
+    branches: [main]
+    paths: ["feeds/**", "packages/core/**", ".github/workflows/feeds.yml"]
+  schedule:
+    - cron: "17 1 * * *"   # 每天 09:17 北京时间，刷新 DTSTAMP 并带上新录入的公告
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci
+      - run: npm run build -w @icyn/date
+      - run: node feeds/gen-ics.mjs
+      - run: |
+          mkdir -p _site
+          cp feeds/site/index.html _site/
+          cp feeds/dist/*.ics _site/
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: _site }
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
