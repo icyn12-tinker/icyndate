@@ -1,8 +1,9 @@
 // 生成 .ics 订阅源，并与交易所官方休市区间逐天对拍。用法：node feeds/gen-ics.mjs
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dayInfo } from "../packages/core/dist/index.js";
 
 const here = new URL(".", import.meta.url);
+mkdirSync(new URL("dist/", here), { recursive: true }); // dist/ 被 .gitignore 忽略，CI 的干净检出里没有
 const sse = JSON.parse(readFileSync(new URL("sources/sse-closures.json", here)));
 const YEARS = [2025, 2026, 2027];
 const A_SHARE_YEARS = Object.keys(sse).filter((k) => /^\d{4}$/.test(k)).map(Number);
